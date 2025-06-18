@@ -46,7 +46,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
-  --color-primary: #4AAB3D;
+  --color-primary: #01953F;
   --color-primary-2: #ff7029;
   --color-secondary: #1F1F25;
   --color-body: #6E777D;
@@ -14393,7 +14393,7 @@ nav ul li a {
   }
 }
 .banner-six-inner-content-wrapper .inner-content .under-line-button {
-  color: #4aab3d;
+  color: #01953F;
   font-size: 20px;
   font-weight: 700;
   line-height: 30px;
@@ -15130,7 +15130,7 @@ nav ul li a {
   letter-spacing: 0.04em;
 }
 .cta-solari-wrapper .left-area span.pre span {
-  background: #4AAB3D;
+  background: #01953F;
   padding: 2px 5px;
   display: inline-block;
   border-radius: 4px;
@@ -16888,7 +16888,7 @@ nav ul li a {
   z-index: -1;
   margin: -1px;
   border-radius: inherit;
-  background: linear-gradient(to bottom, #4aab3d, rgba(74, 171, 61, 0));
+  background: linear-gradient(to bottom, #01953F, rgba(74, 171, 61, 0));
   transition: 0.3s;
   opacity: 1;
 }
@@ -18674,7 +18674,7 @@ p {
   z-index: -1;
   margin: -1px;
   border-radius: inherit;
-  background: linear-gradient(to bottom, #4AAB3D, rgba(74, 171, 61, 0));
+  background: linear-gradient(to bottom, #01953F, rgba(74, 171, 61, 0));
   transition: 0.3s;
   opacity: 1;
 }
@@ -23639,7 +23639,7 @@ p {
   z-index: -1;
   margin: -1px;
   border-radius: inherit;
-  background: linear-gradient(to bottom, #4AAB3D, rgba(74, 171, 61, 0));
+  background: linear-gradient(to bottom, #01953F, rgba(74, 171, 61, 0));
   transition: 0.3s;
   opacity: 0;
 }
@@ -23647,7 +23647,7 @@ p {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
-  color: #4AAB3D;
+  color: #01953F;
 }
 .single-pricing-solari-area .title-price {
   font-weight: 700;
