@@ -11888,7 +11888,15 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
 
 #menu-btn {
   cursor: pointer;
+  display: none;
 }
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: block;
+  }
+}
+
 
 header.header-three {
   padding: 32px 80px;
@@ -13790,6 +13798,20 @@ nav ul li a {
 
 .banner-two-main-wrapper-solaric.three {
   background-image: url(../images/banner/Digital_01.jpg);
+}
+
+.banner-two-main-wrapper-solaric::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1; 
+}
+
+
+.banner-two-main-wrapper-solaric > * {
+  position: relative;
+  z-index: 2;
 }
 
 .banner-solari-2-content span {
@@ -23485,7 +23507,7 @@ p {
 
 .pages-footer ul li a {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .pages-footer ul li a i {
@@ -29192,3 +29214,4 @@ edit .quantity-edit button {
 }
 
 /*# sourceMappingURL=style.css.map */
+
