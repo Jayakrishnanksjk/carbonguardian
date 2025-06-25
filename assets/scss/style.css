@@ -80,8 +80,8 @@
   --s-extra-bold: 800;
   --s-black: 900;
   --transition: 0.3s;
-  --font-primary: "Exo", sans-serif;
-  --font-secondary: "Albert Sans", sans-serif;
+  --font-primary: "Geist", sans-serif;
+  --font-secondary: "Geist", sans-serif;
   --font-size-b1: 16px;
   --font-size-b2: 16px;
   --font-size-b3: 22px;
@@ -15000,7 +15000,7 @@ nav ul li a {
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
-  font-family: "Exo", sans-serif;
+  font-family: "Geist", sans-serif;
   color: #fff;
   margin-top: 7px;
   margin-bottom: 8px;
@@ -16888,7 +16888,7 @@ nav ul li a {
   z-index: -1;
   margin: -1px;
   border-radius: inherit;
-  background: linear-gradient(to bottom, #01953F, rgba(74, 171, 61, 0));
+  background: linear-gradient(to bottom, #01953F, rgba(1, 149, 63, 0));
   transition: 0.3s;
   opacity: 1;
 }
@@ -18674,7 +18674,7 @@ p {
   z-index: -1;
   margin: -1px;
   border-radius: inherit;
-  background: linear-gradient(to bottom, #01953F, rgba(74, 171, 61, 0));
+  background: linear-gradient(to bottom, #01953F, rgba(1, 149, 63, 0));
   transition: 0.3s;
   opacity: 1;
 }
@@ -19985,7 +19985,7 @@ p {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgba(74, 171, 61, 0.1019607843);
+  background: rgba(1, 149, 63, 0.1019607843);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20444,7 +20444,7 @@ p {
 .rts-single-working-process .icon {
   width: 100px;
   height: 100px;
-  background: rgba(74, 171, 61, 0.0705882353);
+  background: rgba(1, 149, 63, 0.0705882353);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -23639,7 +23639,7 @@ p {
   z-index: -1;
   margin: -1px;
   border-radius: inherit;
-  background: linear-gradient(to bottom, #01953F, rgba(74, 171, 61, 0));
+  background: linear-gradient(to bottom, #01953F, rgba(1, 149, 63, 0));
   transition: 0.3s;
   opacity: 0;
 }

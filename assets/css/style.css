@@ -50,7 +50,7 @@
   --color-primary-2: #ff7029;
   --color-secondary: #1F1F25;
   --color-body: #6E777D;
-  --color-heading-1: #1f1f25;
+  --color-heading-1: #ffffff;
   --color-white: #fff;
   --color-success: #3EB75E;
   --color-danger: #FF0003;
@@ -80,8 +80,8 @@
   --s-extra-bold: 800;
   --s-black: 900;
   --transition: 0.3s;
-  --font-primary: "Exo", sans-serif;
-  --font-secondary: "Albert Sans", sans-serif;
+  --font-primary: "Geist", sans-serif;
+  --font-secondary: "Geist", sans-serif;
   --font-size-b1: 16px;
   --font-size-b2: 16px;
   --font-size-b3: 22px;
@@ -114,7 +114,7 @@ body {
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Albert Sans", sans-serif;
+  font-family: "Geist", sans-serif;
   color: var(--color-body);
   font-weight: var(--p-regular);
   position: relative;
@@ -185,7 +185,7 @@ h6,
 .h5,
 .h6 {
   word-break: break-word;
-  font-family: "Exo", sans-serif;
+  font-family: "Geist", sans-serif;
   line-height: 1.4074;
   color: var(--color-heading-1);
 }
@@ -437,7 +437,7 @@ cite,
 }
 
 var {
-  font-family: "Exo", sans-serif;
+  font-family: "Geist", sans-serif;
 }
 
 /*---------------------------
@@ -683,7 +683,8 @@ ol ul {
 }
 @media only screen and (max-width: 767px) {
   .rts-section-gapBottom {
-    padding-bottom: 60px;
+    padding: 0px;
+    margin-top: 100px;
   }
 }
 .rts-section-gapTop {
@@ -11888,15 +11889,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
 
 #menu-btn {
   cursor: pointer;
-  display: none;
 }
-
-@media (max-width: 768px) {
-  #menu-btn {
-    display: block;
-  }
-}
-
 
 header.header-three {
   padding: 32px 80px;
@@ -13441,9 +13434,31 @@ nav ul li a {
   color: #ffffff;
 }
 
+/* .bg-breadcrumb {
+  background-image: url(../images/banner/about\ carbon.jpeg);
+} */
+
 .bg-breadcrumb {
-  background-image: url(../images/banner/breadcrumb/01.jpg);
+  position: relative;
+  background-image: url(../images/banner/aboutCarbonNew.jpeg);
+  background-size: cover;
+  background-position: center 30%; 
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+
+  * {
+    position: relative;
+    z-index: 3;
+  }
 }
+
 
 .banner-one-swiper--wrapper-area .banner-main-wrapper-one .pre-title {
   transition-delay: 0.5s;
@@ -13784,7 +13799,7 @@ nav ul li a {
   background: #f6f7f9;
 }
 
-.banner-two-main-wrapper-solaric {
+/* .banner-two-main-wrapper-solaric {
   background-image: url(../images/banner/Industry_01.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -13798,28 +13813,46 @@ nav ul li a {
 
 .banner-two-main-wrapper-solaric.three {
   background-image: url(../images/banner/Digital_01.jpg);
-}
+} */
 
-.banner-two-main-wrapper-solaric::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1; 
-}
-
-
-.banner-two-main-wrapper-solaric > * {
+.banner-two-main-wrapper-solaric {
   position: relative;
-  z-index: 2;
+  background-image: url(../images/banner/Industry_01.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 825px;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+
+  * {
+    position: relative;
+    z-index: 3;
+  }
+
+  &.two {
+    background-image: url(../images/banner/Outcrop_01.jpg);
+  }
+
+  &.three {
+    background-image: url(../images/banner/digitalNew.jpeg);
+  }
 }
+
 
 .banner-solari-2-content span {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 15px;
-  line-height: 20px;
-  letter-spacing: 0.08em;
+letter-spacing: 0.32px;
+  line-height: 24px;
 }
 
 .banner-solari-2-content span.pre {
@@ -13835,9 +13868,10 @@ nav ul li a {
 .banner-solari-2-content .banner-title {
   font-weight: 700;
   font-size: 60px;
-  line-height: 70px;
   color: #fff;
   margin-top: 25px;
+  letter-spacing: 1.44px; 
+  line-height: 86px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -13857,6 +13891,7 @@ nav ul li a {
   color: #fff;
   font-weight: 500;
   font-size: 18px;
+  letter-spacing: 0.4px;
   line-height: 28px;
 }
 
@@ -15684,7 +15719,7 @@ nav ul li a {
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
-  font-family: "Exo", sans-serif;
+  font-family: "Geist", sans-serif;
   color: #fff;
   margin-top: 7px;
   margin-bottom: 8px;
@@ -16772,6 +16807,12 @@ nav ul li a {
     flex-direction: column;
     align-items: flex-start;
   }
+ .solari-about-left-content .content-inner .solari-about-button-area .rts-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+
 }
 .solari-about-left-content .content-inner .solari-about-button-area .call-button {
   display: flex;
@@ -18349,12 +18390,13 @@ nav ul li a {
 
 .title-area-left p.pre {
   color: var(--color-primary);
-  letter-spacing: 0.04em;
   font-weight: 600;
   text-transform: uppercase;
   font-size: 15px;
   font-family: var(--font-primary);
   display: block !important;
+  letter-spacing: 0.32px;
+  line-height: 24px;
 }
 
 .title-area-left p.pre span {
@@ -18362,14 +18404,17 @@ nav ul li a {
   background: var(--color-primary);
   border-radius: 3px;
   color: #fff;
+  letter-spacing: 0.32px;
+  line-height: 24px;
 }
 
 .title-area-left .title {
   font-weight: 700;
   font-size: 48px;
-  line-height: 62px;
   color: #1F1F25;
   margin-top: -12px;
+    letter-spacing: 0.96px;
+  line-height: 60px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -18427,9 +18472,10 @@ nav ul li a {
 .title-area-center .title {
   font-weight: 700;
   font-size: 48px;
-  line-height: 62px;
   color: #1F1F25;
   margin-top: -12px;
+    letter-spacing: 0.96px;
+  line-height: 60px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -19652,8 +19698,9 @@ p {
   transition: 0.3s;
   font-weight: 600;
   font-size: 24px;
-  line-height: 32px;
   color: #1F1F25;
+  letter-spacing: 0.48px;
+  line-height: 32px;
 }
 
 .single-solari-service-start .title:hover {
@@ -19664,7 +19711,8 @@ p {
   color: #74787C;
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
+   letter-spacing: 0.32px;
+  line-height: 24px;
 }
 
 .single-solari-service-start a.read-more-btn {
@@ -21780,8 +21828,7 @@ p {
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
-  min-height: 386px;
-  height: auto;
+  height: 386px;
   padding: 50px 40px;
   text-align: center;
   background-repeat: no-repeat;
@@ -23455,6 +23502,7 @@ p {
   color: #fff;
   font-weight: 700;
   font-size: 24px;
+  letter-spacing: 0.48px;
   line-height: 32px;
 }
 
@@ -23507,7 +23555,7 @@ p {
 
 .pages-footer ul li a {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .pages-footer ul li a i {
@@ -23643,6 +23691,8 @@ p {
 .single-footer-one-wrapper.two .single-footer-component .body p.disc {
   margin-bottom: 30px;
   color: #D9D9D9;
+   letter-spacing: 0.32px;
+  line-height: 24px;
 }
 
 .rts-footer-one.footer-bg-one {
@@ -25324,6 +25374,12 @@ p {
 
 .single-footer-one-wrapper.two .single-footer-component.first {
   flex-basis: 39%;
+}
+
+@media only screen and (max-width: 575px) {
+  .single-footer-one-wrapper.two .single-footer-component.first {
+    flex-basis: 100%;
+  }
 }
 
 .faq-8 .faq-solari-image-area {
@@ -29214,4 +29270,3 @@ edit .quantity-edit button {
 }
 
 /*# sourceMappingURL=style.css.map */
-
