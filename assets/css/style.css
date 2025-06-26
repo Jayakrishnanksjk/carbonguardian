@@ -193,7 +193,7 @@ h6,
 h1,
 .h1 {
   font-size: var(--h1);
-  line-height: 91px;
+  line-height: 72px;
   font-weight: 700;
 }
 
@@ -13693,7 +13693,7 @@ nav ul li a {
   color: #fff;
   font-weight: 700;
   font-size: 80px;
-  line-height: 86px;
+  line-height: 72px;
   margin-bottom: 50px;
   margin-top: 15px;
 }
@@ -13871,7 +13871,7 @@ letter-spacing: 0.32px;
   color: #fff;
   margin-top: 25px;
   letter-spacing: 1.44px; 
-  line-height: 86px;
+  line-height: 60px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -16753,7 +16753,7 @@ letter-spacing: 0.32px;
 }
 
 .solari-about-left-content .content-inner p.disc {
-  width: 80%;
+  width: 70%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -20539,6 +20539,7 @@ p {
 .portfolio-disc-content .title-area .title {
   margin-top: 15px;
   font-size: 30px;
+  color: black;
 }
 
 .portfolio-disc-content p.disc {
@@ -20547,6 +20548,7 @@ p {
   line-height: 26px;
   color: #74787c;
   margin-bottom: 25px;
+  letter-spacing: 0%;
 }
 
 .portfolio-disc-content p.quote {
@@ -21828,13 +21830,14 @@ p {
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 386px;
+  height: 650px;
   padding: 50px 40px;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 
 @media only screen and (max-width: 1199px) {
   .rts-single-working-process {
@@ -25049,9 +25052,10 @@ p {
   box-shadow: none;
   font-weight: 700;
   font-size: 22px;
-  line-height: 29px;
+  line-height: 28px;
   margin-bottom: 12px;
   margin-bottom: 0;
+  letter-spacing: -4%;
 }
 
 @media only screen and (max-width: 575px) {
@@ -25147,6 +25151,7 @@ p {
   line-height: 19px;
   text-transform: uppercase;
   margin-bottom: 10px;
+  color: black;
 }
 
 .faq-area-start-one .accordion .accordion-item .accordion-body .inner .content p.disc {
@@ -26536,8 +26541,8 @@ form.appoinment-form .input-half-wrapper .single-input input {
   font-weight: 700;
   font-size: 14px;
   color: #fff;
-  line-height: 17px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.32px;
+  line-height: 24px;
 }
 
 .con-tent-main .title {
@@ -26547,9 +26552,10 @@ form.appoinment-form .input-half-wrapper .single-input input {
 .con-tent-main .title a {
   font-weight: 700;
   font-size: 60px;
-  line-height: 80px;
   color: #fff;
   font-family: var(--font-primary);
+  letter-spacing: 1.44px;
+  line-height: 60px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -26672,6 +26678,7 @@ form.appoinment-form .input-half-wrapper .single-input input {
 .single-contact--info-wrapper .content .title {
   margin-bottom: 0;
   transition: 0.3s;
+  color: black;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -26681,6 +26688,7 @@ form.appoinment-form .input-half-wrapper .single-input input {
 }
 .single-contact--info-wrapper .content .title.under-line {
   text-decoration: underline;
+  color: #000;
 }
 
 .single-contact--info-wrapper .content .title:hover {
