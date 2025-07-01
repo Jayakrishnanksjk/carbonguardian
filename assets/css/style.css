@@ -19705,7 +19705,7 @@ p {
 }
 
 .single-solari-service-start .title:hover {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
 }
 
 .single-solari-service-start p.disc {
@@ -29283,3 +29283,12 @@ edit .quantity-edit button {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.inline-bullets span {
+  display: inline-block;
+  text-indent: -1em;
+  padding-left: 1em;
+  max-width: 600px; /* Optional: sets width constraint */
+  text-align: justify; /* Optional: justifies text */
+}
