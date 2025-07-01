@@ -19325,10 +19325,11 @@ p {
   margin-bottom: 12px;
   font-size: 20px;
   text-transform: uppercase;
+  color: #000;
 }
 
 .rts-single-service-solar-energy p.disc {
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 }
 
 .bg_dark-solar {
@@ -20549,6 +20550,8 @@ p {
   color: #74787c;
   margin-bottom: 25px;
   letter-spacing: 0%;
+  text-align: justify;
+  padding-right: 30px;
 }
 
 .portfolio-disc-content p.quote {
@@ -20897,11 +20900,13 @@ p {
   bottom: 40px;
   right: 0;
   width: 92%;
+  min-height: 220px;
 }
 
 .rts-solar-single-product-one .inner-content a .title {
   margin-bottom: 7px;
   transition: 0.3s;
+  color: #000;
 }
 
 .rts-solar-single-product-one .inner-content a .title:hover {
