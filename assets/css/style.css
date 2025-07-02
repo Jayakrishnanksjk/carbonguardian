@@ -106,7 +106,8 @@ html {
   font-size: 10px;
   overflow: hidden;
   overflow-y: auto;
-  scroll-behavior: auto !important;
+  /* scroll-behavior: auto !important; */
+  scroll-behavior: smooth;
 }
 
 body {
@@ -659,7 +660,7 @@ ol ul {
 }
 
 .rts-section-gap {
-  padding: 120px 0;
+  padding: 64px 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -13192,7 +13193,7 @@ nav ul li a {
   padding: 19px 15px;
   display: block;
   color: #1F1F25;
-  font-weight: 700;
+  font-weight: 500;
   transition: 0.3s;
 }
 
@@ -20684,7 +20685,7 @@ p {
   left: 30px !important;
   bottom: -20px;
   width: 87%;
-  height: 97px;
+  height: 240px;
   background: #ffffff;
   opacity: 0;
   transition: 0.6s;
@@ -20726,7 +20727,7 @@ p {
   font-size: 24px;
   line-height: 34px;
   color: #1f1f25;
-  margin-bottom: 25px;
+  margin-bottom: 5px;
   transition: 0.3s;
 }
 
@@ -20900,7 +20901,7 @@ p {
   bottom: 40px;
   right: 0;
   width: 92%;
-  min-height: 220px;
+  min-height: 276px;
 }
 
 .rts-solar-single-product-one .inner-content a .title {
@@ -23563,7 +23564,7 @@ p {
 
 .pages-footer ul li a {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .pages-footer ul li a i {
@@ -26609,7 +26610,7 @@ form.appoinment-form .input-half-wrapper .single-input input {
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
   box-shadow: 0px 4px 47px rgba(0, 0, 0, 0.01);
-  border-radius: 100px;
+  border-radius: 5px;
   height: 60px;
   padding: 5px 15px;
 }
@@ -26617,7 +26618,7 @@ form.appoinment-form .input-half-wrapper .single-input input {
 .contact-page-form textarea {
   border: 1px solid #EAEAEA;
   box-shadow: 0px 4px 47px rgba(0, 0, 0, 0.01);
-  border-radius: 20px;
+  border-radius: 5px;
   height: 150px;
   background: #fff;
   margin-top: 20px;
@@ -29292,3 +29293,27 @@ edit .quantity-edit button {
   max-width: 600px; /* Optional: sets width constraint */
   text-align: justify; /* Optional: justifies text */
 }
+
+
+.single-case-ac {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+.single-case-ac .description {
+  color: #555;
+  margin-top: 8px;
+}
+
+.custom-bullets {
+  padding-left: 1.2em;
+  margin: 0;
+  list-style-type: disc;
+}
+
+.custom-bullets li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
