@@ -29354,7 +29354,7 @@ edit .quantity-edit button {
 .custom-bullets li {
   margin-bottom: 8px;
   line-height: 1.5;
-  text-align: justify;
+  text-align: left;
 }
 
 /* Spinner loader */
