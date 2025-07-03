@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "author": "John Doe",
+    "image": "assets/images/blog/01.jpg",
+    "date": "March 15, 2022",
+    "tags": "Clean, Service",
+    "title": "Carbon Guardian participates in EAGE Annual Conference & Exhbition 2025",
+    "link": "blog-details.html?id=1",
+    "description" : "Carbon Guardian is excited to participate in the 2025 EAGE Annual Conference & Exhibition scheduled from June 2 - 7, 2025, in Toulouse, France. We look forward to introducing our technology platform C44 with a cloud-native approach to microseismic monitoring for CCS projects, UGS, and geothermal projects. Join us at the EAGE Start-Up Zone, where we will be showcasing our innovative solution."
+  },
+  {
+  "id": 2,
+  "author": "Jane Smith",
+  "image": "assets/images/blog/02.jpg",
+  "date": "April 10, 2022",
+  "tags": "Monitoring, CCS",
+  "title": "Carbon Guardian participates in GET2024 Conference",
+  "description": "Carbon Guardian is thrilled to participate in the 5th EAGE Global Energy Transition Conference & Exhibition scheduled from November 5 - 7, 2024, in Rotterdam, The Netherlands. We look forward to connecting with the CCS community, discussing MMV strategies for CO2 storage sites, and exploring opportunities for collaboration. Join us at the EAGE GREENTECH Start-Up Zone, where we will be showcasing our innovative solution.",
+  "link": "blog-details.html?id=2"
+},
+{
+    "id": 3,
+    "author": "John Doe",
+    "image": "assets/images/blog/01.jpg",
+    "date": "March 15, 2022",
+    "tags": "Clean, Service",
+    "title": "Carbon Guardian participates in Carbon Capture Summit 2024",
+    "link": "blog-details.html?id=3",
+    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+  },
+  {
+  "id": 4,
+  "author": "Jane Smith",
+  "image": "assets/images/blog/02.jpg",
+  "date": "April 10, 2022",
+  "tags": "Monitoring, CCS",
+  "title": "Advancing Carbon Storage with AI-powered Seismic Monitoring",
+  "description": "This blog explores how AI-driven seismic monitoring is revolutionizing CCS technologies...",
+  "link": "blog-details.html?id=4"
+},
+{
+    "id": 5,
+    "author": "John Doe",
+    "image": "assets/images/blog/01.jpg",
+    "date": "March 15, 2022",
+    "tags": "Clean, Service",
+    "title": "More will give you peace mind knowing that something",
+    "link": "blog-details.html?id=5",
+    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+  },
+  {
+  "id": 6,
+  "author": "Jane Smith",
+  "image": "assets/images/blog/02.jpg",
+  "date": "April 10, 2022",
+  "tags": "Monitoring, CCS",
+  "title": "Advancing Carbon Storage with AI-powered Seismic Monitoring",
+  "description": "This blog explores how AI-driven seismic monitoring is revolutionizing CCS technologies...",
+  "link": "blog-details.html?id=6"
+},
+{
+    "id": 7,
+    "author": "John Doe",
+    "image": "assets/images/blog/01.jpg",
+    "date": "March 15, 2022",
+    "tags": "Clean, Service",
+    "title": "More will give you peace mind knowing that something",
+    "link": "blog-details.html?id=7",
+    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+  },
+  {
+  "id": 8,
+  "author": "Jane Smith",
+  "image": "assets/images/blog/02.jpg",
+  "date": "April 10, 2022",
+  "tags": "Monitoring, CCS",
+  "title": "Advancing Carbon Storage with AI-powered Seismic Monitoring",
+  "description": "This blog explores how AI-driven seismic monitoring is revolutionizing CCS technologies...",
+  "link": "blog-details.html?id=8"
+},
+{
+    "id": 9,
+    "author": "John Doe",
+    "image": "assets/images/blog/01.jpg",
+    "date": "March 15, 2022",
+    "tags": "Clean, Service",
+    "title": "More will give you peace mind knowing that something",
+    "link": "blog-details.html?id=9",
+    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+  },
+  {
+  "id": 10,
+  "author": "Jane Smith",
+  "image": "assets/images/blog/02.jpg",
+  "date": "April 10, 2022",
+  "tags": "Monitoring, CCS",
+  "title": "Advancing Carbon Storage with AI-powered Seismic Monitoring",
+  "description": "This blog explores how AI-driven seismic monitoring is revolutionizing CCS technologies...",
+  "link": "blog-details.html?id=10"
+}
+]
