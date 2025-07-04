@@ -796,7 +796,7 @@
         <div id="loader"></div>
 
         <!-- SHOW MORE BUTTON -->
-        <div class="row mt-4">
+        <div class="row mt-4 justify-content-center">
           <div class="col text-center">
             <button id="show-more" class="rts-btn btn-primary" style="width: 20%;">
               Show More
@@ -1099,75 +1099,110 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-      let allNews = [];
-      let currentIndex = 0;
-      const batchSize = 3; // 3 items per row
+  let allNews = [];
+  let currentIndex = 0;
+  const batchSize = 3;
+  const initialItems = 6;
+  let isExpanded = false; // track toggle state
 
-      function renderNewsBatch() {
-        const container = document.getElementById("news-container");
-        const nextBatch = allNews.slice(currentIndex, currentIndex + batchSize);
+  function clearExtraNews() {
+    const container = document.getElementById("news-container");
+    container.innerHTML = "";
 
-        nextBatch.forEach((item) => {
-          const col = document.createElement("div");
-          col.className = "col-lg-4";
-          col.innerHTML = `
-        <div class="blog-single-one text-center" style="min-height: 100%;">
-          <a href="${item.link}" class="thumbnail">
-            <div class="inner">
-              <img src="${item.image}" alt="blog-image" />
-            </div>
-          </a>
-          <div class="head">
-            <div class="date-area single-info">
-              <i class="fa-light fa-calendar-days"></i>
-              <p>${item.date}</p>
-            </div>
-            <div class="tag-area single-info">
-              <i class="fa-light fa-tags"></i>
-              <p>${item.tags}</p>
-            </div>
+    allNews.slice(0, initialItems).forEach((item) => {
+      const col = createNewsCol(item);
+      container.appendChild(col);
+    });
+
+    currentIndex = initialItems;
+    isExpanded = false;
+
+    const button = document.getElementById("show-more");
+    button.innerText = "Show More";
+    button.style.display = "block";
+  }
+
+  function createNewsCol(item) {
+    const col = document.createElement("div");
+    col.className = "col-lg-4";
+    col.innerHTML = `
+      <div class="blog-single-one text-center" style="min-height: 100%;">
+        <a href="${item.link}" class="thumbnail">
+          <div class="inner">
+            <img src="${item.image}" alt="blog-image" />
           </div>
-          <div class="body text-start d-flex flex-column justify-content-between" style="height: 100%;">
-            <a href="${item.link}">
-              <h5 class="title">${item.title}</h5>
-            </a>
-            <a href="blog-details.html?id=${item.id}" class="rts-btn btn-border radious-0 mt-auto">
-  Read Details <i class="fa-regular fa-arrow-up-right"></i>
-</a>
+        </a>
+        <div class="head">
+          <div class="date-area single-info">
+            <i class="fa-light fa-calendar-days"></i>
+            <p>${item.date}</p>
+          </div>
+          <div class="tag-area single-info">
+            <i class="fa-light fa-tags"></i>
+            <p>${item.tags}</p>
           </div>
         </div>
-      `;
-          container.appendChild(col);
-        });
+        <div class="body text-start d-flex flex-column justify-content-between" style="height: 100%;">
+          <a href="${item.link}">
+            <h5 class="title">${item.title}</h5>
+          </a>
+          <a href="blog-details.html?id=${item.id}" class="rts-btn btn-border radious-0 mt-auto">
+            Read Details <i class="fa-regular fa-arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    `;
+    return col;
+  }
 
-        currentIndex += batchSize;
+  function renderNewsBatch() {
+    const container = document.getElementById("news-container");
+    const nextBatch = allNews.slice(currentIndex, currentIndex + batchSize);
 
-        // Hide button if all loaded
-        if (currentIndex >= allNews.length) {
-          document.getElementById("show-more-btn").style.display = "none";
-        }
-      }
+    nextBatch.forEach((item) => {
+      const col = createNewsCol(item);
+      container.appendChild(col);
+    });
 
-      // Load JSON and show initial items
-      fetch("assets/data/newsdata.json")
-        .then((res) => res.json())
-        .then((data) => {
-          allNews = data;
-          renderNewsBatch(); // Initial 3
-          renderNewsBatch(); // Initial 6 (2 rows)
-        });
+    currentIndex += batchSize;
 
-      // Button event
-      document.getElementById("show-more").addEventListener("click", () => {
-        const loader = document.getElementById("loader");
-        loader.style.display = "block";
+    const button = document.getElementById("show-more");
 
-        setTimeout(() => {
-          loader.style.display = "none";
-          renderNewsBatch();
-        }, 1000); // 1 second fake delay
+    if (currentIndex >= allNews.length) {
+      button.innerText = "Show Less";
+      isExpanded = true;
+    }
+  }
+
+  // Load JSON and show initial items
+  fetch("assets/data/newsdata.json")
+    .then((res) => res.json())
+    .then((data) => {
+      allNews = data;
+      allNews.slice(0, initialItems).forEach((item) => {
+        const col = createNewsCol(item);
+        document.getElementById("news-container").appendChild(col);
       });
-    </script>
+      currentIndex = initialItems;
+    });
+
+  // Button toggle
+  document.getElementById("show-more").addEventListener("click", () => {
+    const loader = document.getElementById("loader");
+    loader.style.display = "block";
+
+    setTimeout(() => {
+      loader.style.display = "none";
+
+      if (!isExpanded) {
+        renderNewsBatch();
+      } else {
+        clearExtraNews();
+      }
+    }, 1000);
+  });
+</script>
+
 
     <!-- header style two End -->
   </body>
