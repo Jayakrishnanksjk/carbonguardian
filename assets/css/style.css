@@ -26601,7 +26601,7 @@ form.appoinment-form .input-half-wrapper .single-input input {
   color: #fff;
   font-family: var(--font-primary);
   letter-spacing: 1.44px;
-  line-height: 60px;
+  line-height: 80px;
 }
 
 @media only screen and (max-width: 767px) {
