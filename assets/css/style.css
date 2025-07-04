@@ -395,6 +395,8 @@ p.b3 {
 
 p:last-child {
   margin-bottom: 0;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .b1 {
@@ -13222,6 +13224,19 @@ nav ul li a {
   transform: translateX(-50%);
   padding: 0 287px;
   border-radius: 0;
+  animation: fadeInSticky 1s ease forwards;
+}
+
+
+@keyframes fadeInSticky {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1919px) {
@@ -16756,6 +16771,8 @@ letter-spacing: 0.32px;
 
 .solari-about-left-content .content-inner p.disc {
   width: 70%;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media only screen and (max-width: 767px) {
@@ -19611,6 +19628,8 @@ p {
   margin-bottom: 0;
   color: #74787C;
   transition: 0.3s;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .rts-service-area-height-solari {
@@ -20562,7 +20581,8 @@ p {
 }
 
 .portfolio-disc-content p.disc {
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
   line-height: 26px;
   color: #74787c;
@@ -20702,7 +20722,7 @@ p {
   left: 30px !important;
   bottom: -20px;
   width: 87%;
-  height: 240px;
+  height: 172px;
   background: #ffffff;
   opacity: 0;
   transition: 0.6s;
@@ -20714,13 +20734,14 @@ p {
   position: absolute;
   left: 20px;
   top: 20px;
+  right: 20px;
 }
 
 .air-condition-swiper-wrapper .swiper-wrapper .swiper-slide .single-case-ac .inner-content .inner span.pre {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  color: #1f1f25;
+  color: #01953f;
   display: block;
   margin-bottom: 10px;
   position: relative;
@@ -21915,7 +21936,8 @@ p {
   }
 }
 .rts-single-working-process .content p.disc {
-  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
   font-size: 16px;
   line-height: 24px;
 }
@@ -22970,6 +22992,8 @@ p {
 .blog-single-post-listing .blog-listing-content p.disc {
   font-size: 16px;
   line-height: 26px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 @media only screen and (max-width: 479px) {
@@ -23742,6 +23766,8 @@ p {
   color: #D9D9D9;
    letter-spacing: 0.32px;
   line-height: 24px;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .rts-footer-one.footer-bg-one {
@@ -29349,12 +29375,16 @@ edit .quantity-edit button {
   padding-left: 1.2em;
   margin: 0;
   list-style-type: disc;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .custom-bullets li {
   margin-bottom: 8px;
   line-height: 1.5;
   text-align: left;
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Spinner loader */
@@ -29409,3 +29439,12 @@ edit .quantity-edit button {
   background-color: #017B34;
 }
 
+
+
+.add-padding-top{
+  padding-top: 120px !important;
+}
+
+.remove-padding-bottom{
+  padding-bottom: 0px !important;
+}
