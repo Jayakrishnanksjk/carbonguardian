@@ -19640,7 +19640,7 @@ p {
 
 .single-solari-service-start {
   padding: 30px;
-  background-image: url(../images/service/20.png);
+  background-image: url(../images/banner/microseismic\ new.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19655,15 +19655,19 @@ p {
 }
 
 .single-solari-service-start.two {
-  background-image: url(../images/service/29.png);
+  background-image: url(../images/banner/measurement.jpeg);
 }
 
 .single-solari-service-start.three {
-  background-image: url(../images/service/30.png);
+  background-image: url(../images/banner/data-enginnering.jpeg);
 }
 
 .single-solari-service-start.four {
-  background-image: url(../images/service/31.png);
+  background-image: url(../images/banner/geomechanics-service.png);
+}
+
+.single-solari-service-start.five {
+  background-image: url(../images/banner/technical-adv.jpeg);
 }
 
 .single-solari-service-start:hover .icon-area {
