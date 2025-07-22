@@ -21906,7 +21906,7 @@ p {
   background: #ff7029;
 }
 
-.rts-single-working-process {
+/* .rts-single-working-process { */
   /* background-image: url(../images/working-process/01.png); */
   /* position: relative;
   background-repeat: no-repeat;
@@ -21917,9 +21917,9 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; */
-}
+/* } */
 
-.rts-single-working-process {
+/* .rts-single-working-process {
   position: relative;
   height: 500px;
   padding: 50px 40px;
@@ -21930,8 +21930,20 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
+} */
 
+.rts-single-working-process {
+    position: relative;
+    min-height: 329px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #e0e0e0;
+    z-index: 1;
+    background: #fff;
+}
 
 
 @media only screen and (max-width: 1199px) {
