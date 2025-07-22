@@ -19320,14 +19320,26 @@ p {
   transform: translateX(-50%);
 }
 
-.rts-single-service-solar-energy {
+/* .rts-single-service-solar-energy {
   padding: 50px 25px;
   background: #fff;
   box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.04);
   border-radius: 15px;
   height: 100%;
   text-align: center;
+} */
+
+.rts-single-service-solar-energy {
+    padding: 40px 30px;
+    background: linear-gradient(135deg, #fefefe, #f5f5f5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    height: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #e0e0e0;
 }
+
 
 .rts-single-service-solar-energy .icon {
   width: 100px;
@@ -19521,7 +19533,7 @@ p {
 .single-service-solari {
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.04);
+  /* box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.04); */
   transition: 0.3s;
   overflow: hidden;
   display: block;
@@ -19535,7 +19547,7 @@ p {
 }
 
 
-.single-service-solari-measurement{
+/* .single-service-solari-measurement{
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.04);
@@ -19543,13 +19555,31 @@ p {
   overflow: hidden;
   display: block;
   position: relative;
-  /* background-image: url(../images/service/19.png); */
+  background-image: url(../images/service/19.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
   position: relative;
   height: 100%;
+} */
+
+.single-service-solari-measurement {
+    padding: 40px 30px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #fefefe, #f5f5f5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #e0e0e0;
 }
+
 
 .single-service-solari.two {
   background-image: url(../images/service/26.png);
