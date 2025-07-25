@@ -2,7 +2,7 @@
   {
     "id": 1,
     "author": "John Doe",
-    "image": "assets/images/blog/01.jpg",
+    "image": "assets/images/blog/TOU25.png",
     "date": "March 15, 2022",
     "tags": "Clean, Service",
     "title": "Carbon Guardian participates in EAGE Annual Conference & Exhbition 2025",
@@ -12,7 +12,7 @@
   {
   "id": 2,
   "author": "Jane Smith",
-  "image": "assets/images/blog/02.jpg",
+  "image": "assets/images/blog/GET2024_logo.png",
   "date": "April 10, 2022",
   "tags": "Monitoring, CCS",
   "title": "Carbon Guardian participates in GET2024 Conference",
@@ -22,7 +22,7 @@
 {
     "id": 3,
     "author": "John Doe",
-    "image": "assets/images/blog/01.jpg",
+    "image": "assets/images/blog/CSS_202410.png",
     "date": "March 15, 2022",
     "tags": "Clean, Service",
     "title": "Carbon Guardian participates in Carbon Capture Summit 2024",
