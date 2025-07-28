@@ -33,7 +33,7 @@
   {
   "id": 4,
   "author": "Jane Smith",
-  "image": "assets/images/blog/02.jpg",
+"image": "assets/images/blog/Atgeir_logo.png",
   "date": "April 10, 2022",
   "tags": "Monitoring, CCS",
   "title": "Strategic Partnership with Atgeir Solutions",
@@ -44,7 +44,7 @@
 {
     "id": 5,
     "author": "John Doe",
-    "image": "assets/images/blog/01.jpg",
+    "image": "assets/images/blog/seisneticsLaunch.png",
     "date": "March 15, 2022",
     "tags": "Clean, Service",
     "title": "4D Seismic Interpretation using AI",
@@ -54,7 +54,7 @@
   {
   "id": 6,
   "author": "Jane Smith",
-  "image": "assets/images/blog/02.jpg",
+  "image": "assets/images/blog/msLauncha.png",
   "date": "April 10, 2022",
   "tags": "Monitoring, CCS",
   "title": "Carbon Guardian launches Microseismic Service",
@@ -64,7 +64,7 @@
 {
     "id": 7,
     "author": "John Doe",
-    "image": "assets/images/blog/01.jpg",
+    "image": "assets/images/blog/gmLaunch.png",
     "date": "March 15, 2022",
     "tags": "Clean, Service",
     "title": "Carbon Guardian launches Geomechanical Service",
@@ -74,7 +74,7 @@
   {
   "id": 8,
   "author": "Jane Smith",
-  "image": "assets/images/blog/02.jpg",
+  "image": "assets/images/blog/msft_ETS.png",
   "date": "April 10, 2022",
   "tags": "Monitoring, CCS",
   "title": "Microsoft selects Carbon Guardian for Energy Transition Studio for Startups",
@@ -84,21 +84,11 @@
 {
     "id": 9,
     "author": "John Doe",
-    "image": "assets/images/blog/01.jpg",
+    "image": "assets/images/blog/CCUSConf_sm.png",
     "date": "March 15, 2022",
     "tags": "Clean, Service",
     "title": "Carbon Guardian participates in CCUS 2024 Conference",
     "link": "news-details.html?id=9",
     "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
-  },
-  {
-  "id": 10,
-  "author": "Jane Smith",
-  "image": "assets/images/blog/02.jpg",
-  "date": "April 10, 2022",
-  "tags": "Monitoring, CCS",
-  "title": "Advancing Carbon Storage with AI-powered Seismic Monitoring",
-  "description": "This blog explores how AI-driven seismic monitoring is revolutionizing CCS technologies...",
-  "link": "news-details.html?id=10"
-}
+  }
 ]
