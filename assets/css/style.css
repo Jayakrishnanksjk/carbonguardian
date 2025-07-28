@@ -22031,6 +22031,7 @@ p {
   padding: 0 10px;
   background: linear-gradient(0deg, #F7F7F7 80%, rgba(0, 0, 0, 0) 80%);
   display: block;
+  height: 266px;
 }
 
 .blog-single-one .thumbnail .inner {
@@ -22041,6 +22042,7 @@ p {
 .blog-single-one .thumbnail .inner img {
   width: 100%;
   transition: 0.6s;
+  height: 266px;
 }
 
 .blog-single-one .thumbnail .inner:hover img {
