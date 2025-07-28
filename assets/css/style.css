@@ -11858,6 +11858,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
 
 .main-haeder-wrapper-h2 .actions-area .search-btn {
   cursor: pointer;
+  display: none;
 }
 
 .main-haeder-wrapper-h2 .actions-area .search-btn i {
