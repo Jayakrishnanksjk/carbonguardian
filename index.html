@@ -219,7 +219,14 @@
                             <a href="#value-proposition">Value Proposition</a>
                           </li>
                           <li><a href="team.html">Leadership Team</a></li>
-                          <li><a href="news.html" target="_blank" rel="noopener noreferrer">News</a></li>
+                          <li>
+                            <a
+                              href="news.html"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              >News</a
+                            >
+                          </li>
                           <!-- <li><a href="appoinment.html">Appoinment</a></li>
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="team-details.html">Team Details</a></li>
@@ -668,7 +675,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6 mt_md--50 mt_sm--40">
+          <!-- <div class="col-lg-6 mt_md--50 mt_sm--40">
             <div class="thumbnail-solari-about">
               <img src="assets/images/about/22.png" alt="about" />
               <div class="vedio-icone">
@@ -680,10 +687,48 @@
                   <a class="video-overlay-close">×</a>
                 </div>
               </div>
-              <!-- <div class="experiencea-area images">
-                <h3 class="title">80+</h3>
-                <p>Years Experience</p>
-              </div> -->
+            </div>
+          </div> -->
+
+          <div class="col-lg-6 mt_md--50 mt_sm--40">
+            <div class="thumbnail-solari-about" style="position: relative">
+              <!-- Thumbnail Image -->
+              <img
+                id="video-thumbnail"
+                src="assets/images/banner/carbon new thumbnail.png"
+                alt="about"
+                style="width: 100%; display: block"
+              />
+
+              <!-- Video Element (Initially Hidden) -->
+              <video
+                id="intro-video"
+                width="100%"
+                controls
+                style="display: none"
+              >
+                <source src="assets/images/about/Carbon Guardian NEW.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+
+              <!-- Your Existing Play Button -->
+              <div
+                class="vedio-icone"
+                style="
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                "
+              >
+                <a
+                  class="video-play-button play-video"
+                  href="javascript:void(0);"
+                >
+                  <span></span>
+                  <!-- <p class="text">Intro Video</p> -->
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -903,7 +948,7 @@
       <div class="row justify-content-center mt--10 g-24">
         <div
           class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
-          style="width: 312px"
+          style="width: 33%"
         >
           <!-- single working steps area -->
           <div class="rts-single-working-process">
@@ -945,7 +990,7 @@
         </div>
         <div
           class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
-          style="width: 312px"
+          style="width: 33%"
         >
           <!-- single working steps area -->
           <div class="rts-single-working-process">
@@ -1001,7 +1046,7 @@
         </div>
         <div
           class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12"
-          style="width: 312px"
+          style="width: 33%"
         >
           <!-- single working steps area -->
           <div class="rts-single-working-process">
@@ -3002,6 +3047,19 @@
           });
         });
     </script>
+
+    <script>
+  document.querySelector('.video-play-button').addEventListener('click', function () {
+    const thumbnail = document.getElementById('video-thumbnail');
+    const video = document.getElementById('intro-video');
+    const playButton = document.querySelector('.vedio-icone');
+
+    thumbnail.style.display = 'none';     // Hide thumbnail
+    video.style.display = 'block';        // Show video
+    playButton.style.display = 'none';    // Hide play button
+    video.play();                         // Play video
+  });
+</script>
 
     <script src="assets/js/main.js"></script>
     <!-- header style two End -->

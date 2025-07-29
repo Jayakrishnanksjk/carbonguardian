@@ -13481,6 +13481,28 @@ nav ul li a {
   }
 }
 
+.bg-breadcrumb-services {
+  position: relative;
+  background-image: url(../images/banner/services-new.jpeg);
+  background-size: cover;
+  background-position: center 30%; 
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+
+  * {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+
 
 .banner-one-swiper--wrapper-area .banner-main-wrapper-one .pre-title {
   transition-delay: 0.5s;
@@ -21942,7 +21964,7 @@ p {
 
 .rts-single-working-process {
     position: relative;
-    min-height: 441px;
+    min-height: 290px;
     padding: 40px 30px;
     text-align: center;
       box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.1);
@@ -29457,7 +29479,7 @@ edit .quantity-edit button {
 .custom-bullets li {
   margin-bottom: 8px;
   line-height: 1.5;
-  text-align: left;
+  text-align: justify;
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
