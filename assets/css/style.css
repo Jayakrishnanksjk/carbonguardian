@@ -13481,6 +13481,28 @@ nav ul li a {
   }
 }
 
+.bg-breadcrumb-team {
+  position: relative;
+  background-image: url(../images/banner/services-new.jpeg);
+  background-size: cover;
+  background-position: center 30%; 
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+
+  * {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+
 .bg-breadcrumb-services {
   position: relative;
   background-image: url(../images/banner/services-new.jpeg);
@@ -19558,10 +19580,10 @@ p {
   margin-top: -160px;
 }
 
-.single-service-solari {
+/* .single-service-solari {
   padding: 30px;
   border-radius: 10px;
-  /* box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.04); */
+  box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.04);
   transition: 0.3s;
   overflow: hidden;
   display: block;
@@ -19573,7 +19595,24 @@ p {
   position: relative;
   height: 100%;
    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+} */
+
+.single-service-solari {
+  padding: 15px 20px;
+  border-radius: 10px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Softer shadow */
+  transition: 0.3s ease-in-out;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  z-index: 2;
+  height: 156px;
+  background-image: none; /* Remove background image */
+  background-repeat: unset;
+  background-size: unset;
 }
+
 
 
 /* .single-service-solari-measurement{
@@ -19662,10 +19701,10 @@ p {
 .single-service-solari:hover p.disc {
   color: #fff;
 } */
-
+/* 
 .single-service-solari .icon-area {
   margin-bottom: 26px;
-}
+} */
 
 .single-service-solari .icon-area svg path {
   transition: 0.3s;
@@ -19673,7 +19712,7 @@ p {
 
 .single-service-solari .title {
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 20px;
   transition: 0.3s;
   color: #1F1F25;
@@ -29545,4 +29584,28 @@ edit .quantity-edit button {
 
 .remove-padding-bottom{
   padding-bottom: 0px !important;
+}
+
+
+.news-card {
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.news-image img {
+  border-radius: 6px;
+}
+
+/* Optional: clamp long description to 4 lines */
+.news-content p.text-muted {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }

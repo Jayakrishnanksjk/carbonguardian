@@ -265,7 +265,7 @@
                           </li>
                           <li>
                             <a href="measurement.html"
-                              >Measurement, Monitoring and Verification</a
+                              >MMV</a
                             >
                           </li>
                           <li>
@@ -920,7 +920,7 @@
                       <li>
                         <a href="measurement.html">
                           <i class="fa-regular fa-chevron-right"></i>
-                          <p style="line-height: 22px;">Measurement, Monitoring & Verification</p>
+                          <p style="line-height: 22px;">MMV</p>
                         </a>
                       </li>
                       <li>
@@ -1147,38 +1147,25 @@
     button.style.display = "block";
   }
 
-  function createNewsCol(item) {
-    const col = document.createElement("div");
-    col.className = "col-lg-4";
-    col.innerHTML = `
-      <div class="blog-single-one text-center" style="min-height: 100%;">
-        <a href="${item.link}" class="thumbnail">
-          <div class="inner">
-            <img src="${item.image}" alt="blog-image" />
-          </div>
-        </a>
-        <div class="head">
-          <div class="date-area single-info">
-            <i class="fa-light fa-calendar-days"></i>
-            <p>${item.date}</p>
-          </div>
-          <div class="tag-area single-info">
-            <i class="fa-light fa-tags"></i>
-            <p>${item.tags}</p>
-          </div>
-        </div>
-        <div class="body text-start d-flex flex-column justify-content-between" style="height: 100%;">
-          <a href="${item.link}">
-            <h5 class="title">${item.title}</h5>
-          </a>
-          <a href="news-details.html?id=${item.id}" class="rts-btn btn-border radious-0 mt-auto">
-            Read Details <i class="fa-regular fa-arrow-up-right"></i>
-          </a>
-        </div>
+function createNewsCol(item) {
+  const col = document.createElement("div");
+  col.className = "col-lg-12 mb-4";
+
+  col.innerHTML = `
+    <div class="news-card d-flex p-3 rounded shadow-sm bg-white align-items-start">
+      <div class="news-image me-3" style="flex: 0 0 300px;">
+        <img src="${item.image}" alt="blog-image" class="img-fluid rounded" style="width: 300px; height: 100px; object-fit: cover;">
       </div>
-    `;
-    return col;
-  }
+      <div class="news-content">
+        <p class="text-muted mb-1 small">${item.date}</p>
+        <h5 class="fw-bold mb-2" style="color: black;">${item.title}</h5>
+        <p class="text-muted small mb-0">${item.description}</p>
+      </div>
+    </div>
+  `;
+  return col;
+}
+
 
   function renderNewsBatch() {
     const container = document.getElementById("news-container");
