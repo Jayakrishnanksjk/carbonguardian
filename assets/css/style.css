@@ -397,7 +397,7 @@ p:last-child {
   margin-bottom: 0;
   font-weight: normal;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .b1 {
@@ -13506,6 +13506,27 @@ nav ul li a {
 .bg-breadcrumb-services {
   position: relative;
   background-image: url(../images/banner/services-new.jpeg);
+  background-size: cover;
+  background-position: center 30%; 
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+
+  * {
+    position: relative;
+    z-index: 3;
+  }
+}
+
+.bg-breadcrumb-services-sections {
+  position: relative;
+  background-image: url(../images/banner/MMV\ banner.png);
   background-size: cover;
   background-position: center 30%; 
   z-index: 1;
@@ -29519,7 +29540,7 @@ edit .quantity-edit button {
   margin-bottom: 8px;
   line-height: 1.5;
   text-align: justify;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   font-style: normal;
 }
@@ -29591,6 +29612,8 @@ edit .quantity-edit button {
   border: 1px solid #e0e0e0;
   background-color: #fff;
   transition: box-shadow 0.3s ease;
+  border-radius: 12px !important;
+  overflow: hidden;
 }
 
 .news-card:hover {
@@ -29601,11 +29624,16 @@ edit .quantity-edit button {
   border-radius: 6px;
 }
 
-/* Optional: clamp long description to 4 lines */
 .news-content p.text-muted {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+  overflow: visible;
+  text-overflow: unset;
+  white-space: normal;
+  display: block;
+}
+
+.custom-news-col {
+  width: 1345px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px; 
 }

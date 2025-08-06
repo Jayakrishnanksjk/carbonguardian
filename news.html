@@ -1149,22 +1149,57 @@
 
 function createNewsCol(item) {
   const col = document.createElement("div");
-  col.className = "col-lg-12 mb-4";
+  col.className = "custom-news-col";
+  col.style.margin = "33 100px";
 
+  // Split the description by newlines
+  const lines = item.description.split("\n").map(line => line.trim()).filter(line => line !== "");
+
+  // First paragraph before bullets
+  let firstParagraph = "";
+  const bulletItems = [];
+
+  for (let line of lines) {
+    if (line.startsWith("•")) {
+      bulletItems.push(line.replace(/^•\s*/, ""));
+    } else if (bulletItems.length === 0) {
+      // Only assign to firstParagraph if bullets haven't started yet
+      firstParagraph += line + " ";
+    }
+  }
+
+  // Construct HTML
+  let descriptionHTML = "";
+  if (firstParagraph) {
+    descriptionHTML += `<p class="text-muted small mb-2">${firstParagraph.trim()}</p>`;
+  }
+  if (bulletItems.length > 0) {
+    descriptionHTML += "<ul class='text-muted small mb-0'>";
+    bulletItems.forEach(item => {
+      descriptionHTML += `<li>${item}</li>`;
+    });
+    descriptionHTML += "</ul>";
+  }
+
+  // Inject into col
   col.innerHTML = `
-    <div class="news-card d-flex p-3 rounded shadow-sm bg-white align-items-start">
+    <div class="news-card d-flex p-3 rounded shadow-sm bg-white align-items-start" style="border-radius: 12px;">
       <div class="news-image me-3" style="flex: 0 0 300px;">
-        <img src="${item.image}" alt="blog-image" class="img-fluid rounded" style="width: 300px; height: 100px; object-fit: cover;">
+        <img src="${item.image}" alt="blog-image" class="img-fluid rounded" style="width: 269px; height: 182px; object-fit: contain;">
       </div>
       <div class="news-content">
         <p class="text-muted mb-1 small">${item.date}</p>
         <h5 class="fw-bold mb-2" style="color: black;">${item.title}</h5>
-        <p class="text-muted small mb-0">${item.description}</p>
+        ${descriptionHTML}
       </div>
     </div>
   `;
+
   return col;
 }
+
+
+
 
 
   function renderNewsBatch() {

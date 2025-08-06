@@ -7,41 +7,41 @@
     "tags": "Clean, Service",
     "title": "Carbon Guardian participates in EAGE Annual Conference & Exhbition 2025",
     "link": "news-details.html?id=1",
-    "description" : "Carbon Guardian is excited to participate in the 2025 EAGE Annual Conference & Exhibition scheduled from June 2 - 7, 2025, in Toulouse, France. We look forward to introducing our technology platform C44 with a cloud-native approach to microseismic monitoring for CCS projects, UGS, and geothermal projects. Join us at the EAGE Start-Up Zone, where we will be showcasing our innovative solution."
+    "description": "Carbon Guardian is excited to participate in the 2025 EAGE Annual Conference & Exhibition scheduled from June 2 - 7, 2025, in Toulouse, France. We look forward to introducing our technology platform C44 with a cloud-native approach to microseismic monitoring for CCS projects, UGS, and geothermal projects. Join us at the EAGE Start-Up Zone, where we will be showcasing our innovative solution."
   },
   {
-  "id": 2,
-  "author": "Jane Smith",
-  "image": "assets/images/blog/GET2024_logo.png",
-  "date": "April 10, 2022",
-  "tags": "Monitoring, CCS",
-  "title": "Carbon Guardian participates in GET2024 Conference",
-  "description": "Carbon Guardian is thrilled to participate in the 5th EAGE Global Energy Transition Conference & Exhibition scheduled from November 5 - 7, 2024, in Rotterdam, The Netherlands. We look forward to connecting with the CCS community, discussing MMV strategies for CO<sub>2</sub> storage sites, and exploring opportunities for collaboration. Join us at the EAGE GREENTECH Start-Up Zone, where we will be showcasing our innovative solution.",
-  "link": "news-details.html?id=2"
-},
-{
+    "id": 2,
+    "author": "Jane Smith",
+    "image": "assets/images/blog/GET2024_logo.png",
+    "date": "April 10, 2022",
+    "tags": "Monitoring, CCS",
+    "title": "Carbon Guardian participates in GET2024 Conference",
+    "description": "Carbon Guardian is thrilled to participate in the 5th EAGE Global Energy Transition Conference & Exhibition scheduled from November 5 - 7, 2024, in Rotterdam, The Netherlands. We look forward to connecting with the CCS community, discussing MMV strategies for CO<sub>2</sub> storage sites, and exploring opportunities for collaboration. Join us at the EAGE GREENTECH Start-Up Zone, where we will be showcasing our innovative solution.",
+    "link": "news-details.html?id=2"
+  },
+  {
     "id": 3,
     "author": "John Doe",
-    "image": "assets/images/blog/CSS_202410.png",
+    "image": "assets/images/blog/CCS_202410.png",
     "date": "March 15, 2022",
     "tags": "Clean, Service",
     "title": "Carbon Guardian participates in Carbon Capture Summit 2024",
     "link": "news-details.html?id=3",
-    "description" : "The Carbon Capture Summit 2024, held October 14/15 in Houston was an excellent event featuring contributions related to the economics of carbon capture and storage projects, regulatory and legislatory aspects of the underground storage, and the permitting process. Also, a broad set of technical topics ranging from novel methods for direct air capture, to more efficient capture of CO2 from flue gases, technical challenges of the transportation from the emitter to the storage location, and the storage of CO2 in basalt formations were discussed. In addition, this conference was an outstanding opportunity to network with global participants from the CCUS industry."
+    "description": "The Carbon Capture Summit 2024, held October 14/15 in Houston was an excellent event featuring contributions related to the economics of carbon capture and storage projects, regulatory and legislatory aspects of the underground storage, and the permitting process. Also, a broad set of technical topics ranging from novel methods for direct air capture, to more efficient capture of CO2 from flue gases, technical challenges of the transportation from the emitter to the storage location, and the storage of CO2 in basalt formations were discussed. In addition, this conference was an outstanding opportunity to network with global participants from the CCUS industry."
   },
 
   {
-  "id": 4,
-  "author": "Jane Smith",
-"image": "assets/images/blog/Atgeir_logo.png",
-  "date": "April 10, 2022",
-  "tags": "Monitoring, CCS",
-  "title": "Strategic Partnership with Atgeir Solutions",
-  "description": "To quickly develop essential digital solutions for carbon capture and sequestration, expertise and experience from different industries needs to be combined. Thus, we are proud to announce the strategic partnership between Atgeir Solutions and Carbon Guardian which combines the deep expertise in data analytics, cloud computing and AI capabilities of Atgeir Solutions with the experience in subsurface monitoring of Carbon Guardian. This partnership, in addition to the collaboration with Microsoft, will allow the fast development of a cloud-native SaaS solution for the monitoring of CO2 storage. Carbon Guardian is looking forward to a successful, long-term alliance with Atgeir Solutions.",
-  "link": "news-details.html?id=4"
-},
+    "id": 4,
+    "author": "Jane Smith",
+    "image": "assets/images/blog/Atgeir_logo.png",
+    "date": "April 10, 2022",
+    "tags": "Monitoring, CCS",
+    "title": "Strategic Partnership with Atgeir Solutions",
+    "description": "To quickly develop essential digital solutions for carbon capture and sequestration, expertise and experience from different industries needs to be combined. Thus, we are proud to announce the strategic partnership between Atgeir Solutions and Carbon Guardian which combines the deep expertise in data analytics, cloud computing and AI capabilities of Atgeir Solutions with the experience in subsurface monitoring of Carbon Guardian. This partnership, in addition to the collaboration with Microsoft, will allow the fast development of a cloud-native SaaS solution for the monitoring of CO2 storage. Carbon Guardian is looking forward to a successful, long-term alliance with Atgeir Solutions.",
+    "link": "news-details.html?id=4"
+  },
 
-{
+  {
     "id": 5,
     "author": "John Doe",
     "image": "assets/images/blog/seisneticsLaunch.png",
@@ -49,19 +49,19 @@
     "tags": "Clean, Service",
     "title": "4D Seismic Interpretation using AI",
     "link": "news-details.html?id=5",
-    "description" : "Fast and cost-efficient interpretation of time lapse 3D seismic data is essential for tracking the CO2 plume in underground storage. As a part of our portfolio of services and technologies for the monitoring of CO2 storage we bring proven and AI-based seismic interpretation technology and software of Seisnetics to your storage project. The technology developed by Seisnetics allows for automated tracking of horizons and faults from 3D seismic data based on AI-driven waveform recognition. It allows to efficiently screen a large number of potential storage sites and dramatically speeds up structural characterization of a storage site. Potential leakage paths in the cap rock can be identified from the faults interpreted by the AI algorithm. Multivolume analysis and comparison identify changes in the CO2 position over time and forms the base for the tracking of the CO2 cloud in the underground. Choose Carbon Guardian and Seisnetics technology to revolutionize your 4D seismic monitoring. Do always have the latest image of the CO2 in your underground storage."
+    "description": "Fast and cost-efficient interpretation of time lapse 3D seismic data is essential for tracking the CO2 plume in underground storage. As a part of our portfolio of services and technologies for the monitoring of CO2 storage we bring proven and AI-based seismic interpretation technology and software of Seisnetics to your storage project. The technology developed by Seisnetics allows for automated tracking of horizons and faults from 3D seismic data based on AI-driven waveform recognition. It allows to efficiently screen a large number of potential storage sites and dramatically speeds up structural characterization of a storage site. Potential leakage paths in the cap rock can be identified from the faults interpreted by the AI algorithm. Multivolume analysis and comparison identify changes in the CO2 position over time and forms the base for the tracking of the CO2 cloud in the underground. Choose Carbon Guardian and Seisnetics technology to revolutionize your 4D seismic monitoring. Do always have the latest image of the CO2 in your underground storage."
   },
   {
-  "id": 6,
-  "author": "Jane Smith",
-  "image": "assets/images/blog/msLauncha.png",
-  "date": "April 10, 2022",
-  "tags": "Monitoring, CCS",
-  "title": "Carbon Guardian launches Microseismic Service",
-  "description": "Carbon Guardian proudly announces the launch of its microseismic monitoring service for underground CO2 injection projects, geothermal initiatives, and wastewater injection. With a focus on maximizing efficiency and cost-effectiveness, our experts optimize network layouts, strategically position seismic stations, and determine the ideal number of stations. This approach minimizes long-term monitoring costs while ensuring optimal resolution and precise event detection, empowering you with comprehensive project oversight. As the injection phase commences, we seamlessly aggregate and process the collected data, employing cutting-edge techniques to detect even the subtlest microseismic events to provide accurate and actionable insights throughout the project's lifecycle. Choose Carbon Guardian as your trusted partner in microseismic monitoring. Together, we will navigate the complexities of underground fluid injection projects, mitigating risks and maximizing project success.",
-  "link": "news-details.html?id=6"
-},
-{
+    "id": 6,
+    "author": "Jane Smith",
+    "image": "assets/images/blog/msLauncha.png",
+    "date": "April 10, 2022",
+    "tags": "Monitoring, CCS",
+    "title": "Carbon Guardian launches Microseismic Service",
+    "description": "Carbon Guardian proudly announces the launch of its microseismic monitoring service for underground CO2 injection projects, geothermal initiatives, and wastewater injection. With a focus on maximizing efficiency and cost-effectiveness, our experts optimize network layouts, strategically position seismic stations, and determine the ideal number of stations. This approach minimizes long-term monitoring costs while ensuring optimal resolution and precise event detection, empowering you with comprehensive project oversight. As the injection phase commences, we seamlessly aggregate and process the collected data, employing cutting-edge techniques to detect even the subtlest microseismic events to provide accurate and actionable insights throughout the project's lifecycle. Choose Carbon Guardian as your trusted partner in microseismic monitoring. Together, we will navigate the complexities of underground fluid injection projects, mitigating risks and maximizing project success.",
+    "link": "news-details.html?id=6"
+  },
+  {
     "id": 7,
     "author": "John Doe",
     "image": "assets/images/blog/gmLaunch.png",
@@ -69,19 +69,19 @@
     "tags": "Clean, Service",
     "title": "Carbon Guardian launches Geomechanical Service",
     "link": "news-details.html?id=7",
-    "description": "Today Carbon Guardian announces the launch of its first service offering, providing geomechanics expertise to the CCS industry. Understanding and mitigating geomechanical risks is essential for the success and acceptance of carbon storage projects. These are the key benefits we bring to your CO2 storage project:\n- Cost efficiency through avoidance of drilling problems, related downtime, and costly side-tracks.\n- Optimal selection of injection parameters to avoid induced seismicity.\n- Optimized injection by selecting the best well location and reservoir intersection for injector wells.\n- Injection pressures and volumes chosen to minimize the risk of triggering induced seismicity or slip on nearby pre-existing faults.\n- A wealth of global geomechanical project experience.\n- Use of Carbon Guardian's support in interactions with regulators.\n- Establish trust with the public by engaging geomechanical expertise with a proven track record."
+    "description": "Today Carbon Guardian announces the launch of its first service offering, providing geomechanics expertise to the CCS industry. Understanding and mitigating geomechanical risks is essential for the success and acceptance of carbon storage projects. These are the key benefits we bring to your CO2 storage project:\n\n• Cost efficiency through avoidance of drilling problems, related downtime, and costly side-tracks.\n\n• Optimal selection of injection parameters to avoid induced seismicity.\n\n• Optimized injection by selecting the best well location and reservoir intersection for injector wells.\n\n• Injection pressures and volumes chosen to minimize the risk of triggering induced seismicity or slip on nearby pre-existing faults.\n\n• A wealth of global geomechanical project experience.\n\n• Use of Carbon Guardian's support in interactions with regulators.\n\n• Establish trust with the public by engaging geomechanical expertise with a proven track record."
   },
   {
-  "id": 8,
-  "author": "Jane Smith",
-  "image": "assets/images/blog/msft_ETS.png",
-  "date": "April 10, 2022",
-  "tags": "Monitoring, CCS",
-  "title": "Microsoft selects Carbon Guardian for Energy Transition Studio for Startups",
-  "description": "In March 2024 Microsoft launched a new initiative to support startup companies contributing to the energy transition, the Energy Transition Studio for Startups . At Carbon Guardian we are excited and honored to be selected by Microsoft for the first cohort of this program. We are looking forward to collaborating with Microsoft and the other startup companies participating in the program, to empower energy transition and a carbon-neutral future. Technology access and support through this Microsoft program will allow us to accelerate our product development and bring an efficient cloud-based monitoring solution to the CCS industry at an even earlier time. Stay tuned for more news on the Energy Transition Studio in this news section and on our Carbon Guardian's LinkedIn account.",
-  "link": "news-details.html?id=8"
-},
-{
+    "id": 8,
+    "author": "Jane Smith",
+    "image": "assets/images/blog/msft_ETS.png",
+    "date": "April 10, 2022",
+    "tags": "Monitoring, CCS",
+    "title": "Microsoft selects Carbon Guardian for Energy Transition Studio for Startups",
+    "description": "In March 2024 Microsoft launched a new initiative to support startup companies contributing to the energy transition, the Energy Transition Studio for Startups . At Carbon Guardian we are excited and honored to be selected by Microsoft for the first cohort of this program. We are looking forward to collaborating with Microsoft and the other startup companies participating in the program, to empower energy transition and a carbon-neutral future. Technology access and support through this Microsoft program will allow us to accelerate our product development and bring an efficient cloud-based monitoring solution to the CCS industry at an even earlier time. Stay tuned for more news on the Energy Transition Studio in this news section and on our Carbon Guardian's LinkedIn account.",
+    "link": "news-details.html?id=8"
+  },
+  {
     "id": 9,
     "author": "John Doe",
     "image": "assets/images/blog/CCUSConf_sm.png",
@@ -89,6 +89,6 @@
     "tags": "Clean, Service",
     "title": "Carbon Guardian participates in CCUS 2024 Conference",
     "link": "news-details.html?id=9",
-    "description" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae."
+    "description": "March 11 - 13, 2024 Carbon Guardian participated in the CCUS 2024 Conference in Houston. Sponsored by SPE, AAPG, and SEG, this leading CCUS event attracted more than 1,800 participants from industry, CO2 storage operators, technology and service providers, regulators, and academia. Anil Wadhwa, CTO at Carbon Guardian, summarized the key points of the conference:\n\n• Increased global energy demand and consumption through 2050 will continue to drive global carbon emissions.\n\n• Per current pace, 20% of carbon emissions from industrial sources are likely to be captured; ~50% if accelerated. The Net-Zero target requires 90-100% capture.\n\n• CCS is a safe and proven technology to sequester CO2. The first patent was filed in 1930.\n\n• US Gulf Coast offers a world-class CCS opportunity with a potential to store ~500 billion metric tons of CO2, equivalent to ~130 years of total U.S. industrial emissions per current levels.\n\n• EPA Class VI permit requires 50 years of post-injection monitoring.\n\n• Regulatory and policy framework is not consistent across the globe. Consequently, the Carbon market is not well developed.\n\n• Approximately 2 million of abandoned O&G wells in the U.S. are not plugged and are potential source of CO2 leakage from the nearby injector wells.\n\n• Seismic time shift attributes can reveal previously unidentified CO2 along the faults.\n\n• Distributed Acoustic Sensing (DAS) can help measure and monitor CO2 saturation.\n\n• Industry standards for risk-based monitoring need to be formulated to reduce operational risks and improve public confidence."
   }
 ]
