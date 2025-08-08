@@ -321,7 +321,9 @@
                         </li> -->
 
                       <li>
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact"
+                          >Contact</a
+                        >
                       </li>
                     </ul>
                   </nav>
@@ -1481,7 +1483,72 @@
       id="contact"
       style="padding-bottom: 0px"
     >
-      <div class="container" style="margin: 0">
+      <!-- <div class="modal-overlay" id="contactModal">
+        <div class="modal-content">
+          <span class="close-button" onclick="closeContactModal()"
+            >&times;</span
+          >
+
+          <div class="form-area">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/mdkzbaqg"
+              method="POST"
+              onsubmit="return handleSubmit(event);"
+            >
+              <div class="input-group">
+                <input
+                  name="name"
+                  type="text"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  name="email"
+                  type="email"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+
+              <input
+                type="text"
+                name="subject"
+                placeholder="Select Subject"
+                required
+              />
+
+              <textarea
+                name="message"
+                placeholder="Type Your Message"
+                required
+              ></textarea>
+
+              <div class="captcha-container">
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LehWnIrAAAAAMKhgWuB6GuMVp_4cZiXvCUrUvbX"
+                  data-callback="enableButton"
+                  data-expired-callback="disableButton"
+                ></div>
+              </div>
+
+              <input type="hidden" name="__captcha" value="false" />
+
+              <button id="submitBtn" class="submit-btn" disabled>
+                Send Message
+              </button>
+
+              <p id="thankYouMessage" class="thank-you">
+                ✅ Thank you for submitting the form!
+              </p>
+            </form>
+          </div>
+        </div>
+      </div> -->
+   
+   
+<div class="container" style="margin: 0">
         <div class="row g-5 align-items-start">
           <!-- Left Column: Heading Text, centered vertically -->
           <div
@@ -1588,6 +1655,8 @@
           </div>
         </div>
       </div>
+
+
     </div>
     <!-- service heign area end -->
 
@@ -2470,13 +2539,10 @@
               <li><a href="team-details.html">Team Details</a></li>
               <li><a href="contact.html">Contact</a></li>
               <li>
-                            <a
-                              href="news.html"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              >News</a
-                            >
-                          </li>
+                <a href="news.html" target="_blank" rel="noopener noreferrer"
+                  >News</a
+                >
+              </li>
             </ul>
             <li class="has-droupdown">
               <a href="#" class="main">Portfolio</a>
@@ -2621,7 +2687,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="index.html#contact">
+                        <a href="#contact">
                           <i class="fa-regular fa-chevron-right"></i>
                           <p>Contact Us</p>
                         </a>
@@ -2874,7 +2940,109 @@
       });
     </script>
 
-    <script>
+    <!-- <script>
+      function enableButton() {
+        document.getElementById("submitBtn").disabled = false;
+      }
+
+      function disableButton() {
+        document.getElementById("submitBtn").disabled = true;
+      }
+
+      function validateCaptcha() {
+        return !!grecaptcha.getResponse();
+      }
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+
+        const form = document.getElementById("contact-form");
+        const btn = document.getElementById("submitBtn");
+        const thankYou = document.getElementById("thankYouMessage");
+
+        if (!validateCaptcha()) {
+          alert("Please complete the CAPTCHA before submitting.");
+          return false;
+        }
+
+        btn.disabled = true;
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: { Accept: "application/json" },
+          });
+
+          if (response.ok) {
+            form.reset();
+            grecaptcha.reset();
+            disableButton(); 
+            thankYou.style.display = "block";
+          } else {
+            thankYou.textContent = "❌ Something went wrong. Please try again.";
+            thankYou.style.color = "red";
+            thankYou.style.display = "block";
+            btn.disabled = false;
+          }
+        } catch (error) {
+          thankYou.textContent = "❌ Network error. Please try again.";
+          thankYou.style.color = "red";
+          thankYou.style.display = "block";
+          btn.disabled = false;
+        }
+
+        return false;
+      }
+    </script> -->
+
+    <!-- <script>
+      function openContactModal() {
+        document.getElementById("contactModal").style.display = "flex";
+      }
+
+      function closeContactModal() {
+        document.getElementById("contactModal").style.display = "none";
+      }
+
+      function enableButton() {
+        document.getElementById("submitBtn").disabled = false;
+      }
+
+      function disableButton() {
+        document.getElementById("submitBtn").disabled = true;
+      }
+
+      window.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeContactModal();
+      });
+
+      window.addEventListener("click", function (e) {
+        const modal = document.getElementById("contactModal");
+        if (e.target === modal) closeContactModal();
+      });
+
+      function handleSubmit(event) {
+        event.preventDefault();
+
+        document.getElementById("thankYouMessage").style.display = "block";
+
+        event.target.reset();
+        disableButton();
+
+        setTimeout(() => {
+          closeContactModal();
+          document.getElementById("thankYouMessage").style.display = "none";
+        }, 3000);
+
+        return false; 
+      }
+    </script> -->
+
+
+<script>
       function enableButton() {
         document.getElementById("submitBtn").disabled = false;
       }
@@ -2931,6 +3099,7 @@
         return false;
       }
     </script>
+
 
     <!-- <script>
   document.addEventListener("DOMContentLoaded", function () {

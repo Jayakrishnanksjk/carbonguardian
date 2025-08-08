@@ -296,7 +296,9 @@
                         </li> -->
 
                       <li>
-                        <a class="nav-link" href="index.html#contact"
+                        <a
+                          class="nav-link"
+                          onclick="openContactModal()"
                           >Contact</a
                         >
                       </li>
@@ -855,7 +857,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="index.html#contact">
+                        <a href="javascript:void(0);" onclick="openContactModal()">
                           <i class="fa-regular fa-chevron-right"></i>
                           <p>Contact Us</p>
                         </a>
@@ -1086,6 +1088,22 @@
     <script src="assets/js/plugins/jquery-timepicker.js"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="assets/js/vendor/magnific-popup.min.js"></script>
+
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+  fetch("contact-popup.html")
+    .then(res => res.text())
+    .then(html => {
+      // Inject popup HTML into the body
+      document.body.insertAdjacentHTML("beforeend", html);
+
+      // Load the JS after the HTML is in the DOM
+      const script = document.createElement("script");
+      script.src = "contact-popup.js";
+      document.body.appendChild(script);
+    });
+</script>
 
     <script src="assets/js/main.js"></script>
     <!-- Scripts style two End -->
