@@ -19936,7 +19936,7 @@ p {
 .single-solari-service-start p.disc {
   color: #74787C;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
    letter-spacing: 0.32px;
   line-height: 24px;
 }
@@ -20772,7 +20772,7 @@ p {
   opacity: 70%;
   font-weight: normal;
   font-style: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   color: #303030;
   margin-bottom: 25px;
@@ -29947,11 +29947,11 @@ textarea {
 
   /* Reduce font size */
   .service-swiper h5.title {
-    font-size: 1rem;
+    font-size: 20px !important;
   }
 
   .service-swiper p.disc {
-    font-size: 0.85rem;
+    font-size: 14px !important;
   }
 }
 
@@ -29998,7 +29998,7 @@ textarea {
     display: none !important;
   }
   .swiper-height{
-    height: 60px !important;
+    height: 80px !important;
   }
 }
 
