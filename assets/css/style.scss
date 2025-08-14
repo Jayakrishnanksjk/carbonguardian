@@ -13896,7 +13896,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
 
 @media only screen and (max-width: 767px) {
     .main-haeder-wrapper-h2 a.logo-area img {
-        max-width: 120px;
+        max-width: 80px !important;
     }
 }
 
@@ -15391,13 +15391,13 @@ nav ul li a {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .main-nav-one {
-        display: none;
+        display: none !important;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .main-nav-one {
-        display: none;
+        display: none !important;
     }
 }
 

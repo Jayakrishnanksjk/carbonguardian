@@ -689,7 +689,7 @@ ol ul {
 @media only screen and (max-width: 767px) {
   .rts-section-gapBottom {
     padding: 0px;
-    margin-top: 100px;
+    margin-top: 30px;
   }
 }
 .rts-section-gapTop {
@@ -11813,7 +11813,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
 
 @media only screen and (max-width: 575px) {
   .main-haeder-wrapper-h2 {
-    padding: 0 10px;
+    padding: 0 5px;
   }
 }
 .main-haeder-wrapper-h2 a.logo-area {
@@ -11828,12 +11828,12 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main-haeder-wrapper-h2 a.logo-area img {
-    max-width: 140px;
+    max-width: 75px;
   }
 }
 @media only screen and (max-width: 767px) {
   .main-haeder-wrapper-h2 a.logo-area img {
-    max-width: 120px;
+    max-width: 75px;
   }
 }
 .main-haeder-wrapper-h2 .actions-area {
@@ -13277,6 +13277,7 @@ nav ul li a {
     transform: none;
     border-radius: 0;
     width: 100%;
+    animation: none;
   }
 }
 @media only screen and (max-width: 575px) {
@@ -13290,12 +13291,12 @@ nav ul li a {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main-nav-one {
-    display: none;
+  display: none !important;
   }
 }
 @media only screen and (max-width: 767px) {
   .main-nav-one {
-    display: none;
+    display: none !important;
   }
 }
 .main-nav-one ul li {
@@ -13305,6 +13306,56 @@ nav ul li a {
 .main-nav-one ul li a.nav-link {
   color: #1F1F25;
 }
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .main-nav-one ul li a.nav-link {
+    font-size: 12px;      /* smaller text */
+    padding: 10px 8px !important; /* less padding */
+  }
+  .main-nav-one ul li.has-dropdown a.nav-link {
+    padding: 10px 8px !important;
+  }
+  .main-nav-one ul li.has-dropdown::before {
+    font-size: 10px; /* smaller dropdown arrow */
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+  .header-logo img {
+    max-height: 30px; /* smaller height */
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header--sticky,
+  .header--sticky.sticky {
+    padding: 5px 15px; /* less vertical padding */
+  }
+}
+
+
+@media (max-width: 767px) {
+    .no-padding-mobile {
+      padding: 0 !important;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .main-nav-one ul li a.nav-link {
@@ -13933,6 +13984,17 @@ nav ul li a {
   }
 }
 
+@media (max-width: 768px) {
+  .banner-two-main-wrapper-solaric {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-two-main-wrapper-solaric {
+    min-height: 320px;
+  }
+}
 
 .banner-solari-2-content span {
   text-transform: uppercase;
@@ -29607,6 +29669,11 @@ edit .quantity-edit button {
   padding-bottom: 0px !important;
 }
 
+  @media only screen and (max-width: 767px) {
+    .add-padding-top{
+      padding-top: 30px !important;
+    }
+  }
 
 .news-card {
   border: 1px solid #e0e0e0;
@@ -29666,12 +29733,29 @@ edit .quantity-edit button {
 /* Close Button */
 .close-button {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 15px;
-  font-size: 24px;
+  width: 35px;
+  height: 35px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  font-size: 22px;
   font-weight: bold;
+  color: #333;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
+
+.close-button:hover {
+  background-color: #ff4d4d;
+  color: #fff;
+  transform: rotate(90deg);
+}
+
 
 /* Form Styling */
 .form-area form {
@@ -29752,4 +29836,166 @@ textarea {
   font-size: 16px;
   margin-top: 10px;
   display: none;
+}
+
+
+
+
+@media (max-width: 767px) {
+  .row.justify-content-center {
+    flex-direction: column !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+    .mobile-full {
+      width: 100% !important;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .mobile-hider{
+      display: none !important;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .form--area {
+      width: 100% !important;
+      padding: 0 15px 15px; 
+    }
+
+    .name-email-wraper {
+      flex-direction: column !important; 
+    }
+
+    .name-email-wraper input {
+      width: 100% !important;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .no-padding-mobile {
+      padding: 0 !important;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+  .desk-hider {
+    display: none !important;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  /* Stack image above text */
+  .custom-news-col .news-card {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Let the image scale naturally */
+  .custom-news-col .news-image {
+    flex: 0 0 auto !important;
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .custom-news-col .news-image img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain;
+  }
+
+  /* Make margins smaller for mobile */
+  .custom-news-col {
+    margin: 15px 0 !important;
+  }
+
+  /* Make Show More button full width */
+  #show-more {
+    width: 100% !important;
+  }
+}
+
+
+@media (max-width: 767px) {
+  /* Remove wrapper padding on mobile */
+  .service-swiper .swiper-wrapper {
+    padding: 0 !important;
+  }
+
+  /* Make each slide full width */
+  .service-swiper .swiper-slide {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  /* Reduce card height for mobile */
+  .service-swiper .single-solari-service-start {
+    min-height: auto !important;
+    padding: 16px;
+  }
+
+  /* Resize images */
+  .service-swiper .icon-area img {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  /* Reduce font size */
+  .service-swiper h5.title {
+    font-size: 1rem;
+  }
+
+  .service-swiper p.disc {
+    font-size: 0.85rem;
+  }
+}
+
+/* Position navigation arrows on each side for this swiper only */
+.service-swiper {
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  color: #01953f !important;
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Place prev on the far left, next on the far right */
+.swiper-button-prev {
+  left: -50px; /* pushes outside container */
+}
+
+.swiper-button-next {
+  right: -50px; /* pushes outside container */
+}
+
+/* Keep arrows inside on mobile */
+@media (max-width: 767px) {
+  .swiper-button-prev {
+    left: 5px;
+  }
+  .swiper-button-next {
+    right: 5px;
+  }
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  background: none !important;
 }
