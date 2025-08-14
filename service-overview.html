@@ -28,6 +28,41 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+
+    <style>
+@media (max-width: 767px) {
+  /* Make card more compact */
+  .service-swiper .single-solari-service-start {
+    padding: 12px !important;
+    margin: 0 8px !important;
+  }
+
+  /* Reduce icon size further */
+  .service-swiper .icon-area img {
+    width: 28px !important;
+    height: 28px !important;
+    margin-bottom: 8px !important;
+  }
+
+  /* Adjust title and description spacing */
+  .service-swiper h5.title {
+    font-size: 0.9rem !important;
+    margin-bottom: 4px !important;
+  }
+
+  .service-swiper p.disc {
+    font-size: 0.75rem !important;
+    margin-bottom: 8px !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Optionally reduce the "Read More" link size */
+  .service-swiper .read-more {
+    font-size: 0.7rem !important;
+  }
+}
+    </style>
   </head>
 
   <body>
@@ -554,7 +589,7 @@
         <div class="swiper mySwiper service-swiper" style="position: relative">
           <div class="swiper-wrapper" style="padding: 12px">
             <div class="swiper-slide">
-              <!-- ignle service height solari -->
+              
               <div
                 class="single-solari-service-start two"
                 style="min-height: 512px"
@@ -567,7 +602,7 @@
                   />
                 </div>
                 <div>
-                  <div style="height: 214px">
+                  <div class="swiper-height" style="height: 214px">
                     <a href="measurement.html">
                       <h5 class="title">MMV</h5>
                     </a>
@@ -578,7 +613,7 @@
                     </p>
                   </div>
 
-                  <!-- Add spacing here -->
+                  
                   <div style="margin-top: 20px">
                     <a href="measurement.html" class="read-more-btn">
                       Read More <i class="fa-regular fa-arrow-right"></i>
@@ -586,9 +621,9 @@
                   </div>
                 </div>
               </div>
-              <!-- ignle service height solari end -->
+             
             </div>
-            <!-- ignle service height solari -->
+           
             <div class="swiper-slide" style="margin-right: 10px">
               <div
                 class="single-solari-service-start"
@@ -602,7 +637,7 @@
                   />
                 </div>
                 <div>
-                  <div style="height: 214px">
+                  <div class="swiper-height" style="height: 214px">
                     <a href="microseismic.html">
                       <h5 class="title">Microseismic</h5>
                     </a>
@@ -622,10 +657,10 @@
                   </div>
                 </div>
               </div>
-              <!-- ignle service height solari end -->
+             
             </div>
             <div class="swiper-slide">
-              <!-- ignle service height solari -->
+              
               <div
                 class="single-solari-service-start four"
                 style="min-height: 516px"
@@ -638,7 +673,7 @@
                   />
                 </div>
                 <div>
-                  <div style="height: 214px">
+                  <div class="swiper-height" style="height: 214px">
                     <a href="geomechanics.html">
                       <h5 class="title">Geomechanics</h5>
                     </a>
@@ -655,10 +690,10 @@
                   </div>
                 </div>
               </div>
-              <!-- ignle service height solari end -->
+              
             </div>
             <div class="swiper-slide">
-              <!-- ignle service height solari -->
+             
               <div
                 class="single-solari-service-start three"
                 style="min-height: 516px"
@@ -671,7 +706,7 @@
                   />
                 </div>
                 <div>
-                  <div style="height: 214px">
+                  <div class="swiper-height" style="height: 214px">
                     <a href="data-engineering.html">
                       <h5 class="title">Data Engineering</h5>
                     </a>
@@ -689,11 +724,11 @@
                   </div>
                 </div>
               </div>
-              <!-- ignle service height solari end -->
+             
             </div>
 
             <div class="swiper-slide">
-              <!-- ignle service height solari -->
+             
               <div
                 class="single-solari-service-start five"
                 style="min-height: 512px"
@@ -706,7 +741,7 @@
                   />
                 </div>
                 <div>
-                  <div style="height: 214px">
+                  <div class="swiper-height" style="height: 214px">
                     <a href="technical-advisory.html">
                       <h5 class="title">Technical Advising</h5>
                     </a>
@@ -724,7 +759,7 @@
                   </div>
                 </div>
               </div>
-              <!-- ignle service height solari end -->
+            
             </div>
           </div>
           
@@ -736,7 +771,7 @@
        style="position: absolute; top: 40%; right: -5px; transform: translateY(-50%); color: #01953f; width: 140px; height: 28px;">
   </div>
 
-  <!-- Pagination -->
+  
   <div class="swiper-pagination" style="bottom: 10px;"></div>
       </div>
 

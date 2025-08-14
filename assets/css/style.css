@@ -29955,7 +29955,7 @@ textarea {
   }
 }
 
-/* Position navigation arrows on each side for this swiper only */
+
 .service-swiper {
   position: relative;
 }
@@ -29976,22 +29976,29 @@ textarea {
   align-items: center;
 }
 
-/* Place prev on the far left, next on the far right */
+
 .swiper-button-prev {
-  left: -50px; /* pushes outside container */
+  background: none !important;
+  left: -50px; 
 }
 
 .swiper-button-next {
-  right: -50px; /* pushes outside container */
+  right: -50px; 
+  background: none !important;
 }
 
-/* Keep arrows inside on mobile */
+
 @media (max-width: 767px) {
   .swiper-button-prev {
     left: 5px;
+    display: none !important;
   }
   .swiper-button-next {
     right: 5px;
+    display: none !important;
+  }
+  .swiper-height{
+    height: 60px !important;
   }
 }
 
@@ -29999,3 +30006,6 @@ textarea {
 .swiper-button-next::after {
   background: none !important;
 }
+
+
+
