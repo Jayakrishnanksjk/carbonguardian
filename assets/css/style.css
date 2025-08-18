@@ -19681,8 +19681,8 @@ p {
 } */
 
 .single-service-solari {
-  padding: 15px 20px;
-  border-radius: 10px;
+  padding: 15px 60px 15px 20px;
+  border-radius: 20px;
   background-color: #ffffff; /* White background */
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease-in-out;
@@ -19697,22 +19697,22 @@ p {
 }
 
 
+.single-service-solari .number-image {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  top: auto;         /* don’t stretch from top */
+  width: auto;
+  opacity: 1;
+  object-fit: contain;
+  z-index: 1;
+  pointer-events: none;
+}
 
-/* .single-service-solari-measurement{
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.04);
-  transition: 0.3s;
-  overflow: hidden;
-  display: block;
-  position: relative;
-  background-image: url(../images/service/19.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 2;
-  position: relative;
-  height: 100%;
-} */
+
+
+
+
 
 .single-service-solari-measurement {
     padding: 40px 30px;
@@ -19729,19 +19729,6 @@ p {
     height: 100%;
     text-align: center;
     /* border: 1px solid #e0e0e0; */
-}
-
-
-.single-service-solari.two {
-  background-image: url(../images/service/26.png);
-}
-
-.single-service-solari.three {
-  background-image: url(../images/service/27.png);
-}
-
-.single-service-solari.four {
-  background-image: url(../images/service/28.png);
 }
 
 .single-service-solari::after {
@@ -19768,26 +19755,6 @@ p {
   border-radius: 10px;
   z-index: -1;
 }
-
-/* .single-service-solari:hover::after {
-  height: 0%;
-}
-
-.single-service-solari:hover .icon-area svg path {
-  fill: #fff;
-}
-
-.single-service-solari:hover .title {
-  color: #fff;
-}
-
-.single-service-solari:hover p.disc {
-  color: #fff;
-} */
-/* 
-.single-service-solari .icon-area {
-  margin-bottom: 26px;
-} */
 
 .single-service-solari .icon-area svg path {
   transition: 0.3s;
