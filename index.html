@@ -1444,7 +1444,7 @@
           <div class="col-lg-7 col-md-12">
             <div class="form--area" style="width: 950px">
               <div id="form-messages"></div>
-              <form
+              <!-- <form
                 id="contact-form"
                 action="https://formspree.io/f/mdkzbaqg"
                 method="POST"
@@ -1478,8 +1478,6 @@
                   required
                   class="mt-3"
                 ></textarea>
-
-                <!-- reCAPTCHA Centered -->
                 <div
                   style="display: flex; justify-content: center; margin: 20px 0"
                 >
@@ -1496,8 +1494,6 @@
                 <button id="submitBtn" class="rts-btn btn-primary" disabled>
                   Send Message
                 </button>
-
-                <!-- Thank you message -->
                 <p
                   id="thankYouMessage"
                   style="
@@ -1509,6 +1505,53 @@
                 >
                   ✅ Thank you for submitting the form!
                 </p>
+              </form> -->
+               <form
+                id="contact-form"
+                action="sentmail.php"
+                method="POST" 
+                class="contact-page-form mt--10"
+              >
+                <div class="name-email-wraper d-flex gap-3 flex-wrap">
+                  <input
+                    name="name"
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                  />
+                  <input
+                    name="email"
+                    type="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                </div>
+
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  class="mt-3"
+                />
+                <textarea
+                  name="message"
+                  placeholder="Type Your Message"
+                  required
+                  class="mt-3"
+                ></textarea>
+
+                <div
+                  style="display: flex; justify-content: center; margin: 20px 0"
+                >
+                  <div
+                    class="g-recaptcha"
+                    data-sitekey="6LehWnIrAAAAAMKhgWuB6GuMVp_4cZiXvCUrUvbX"
+                  ></div>
+                </div>
+
+                <button id="submitBtn" class="rts-btn btn-primary">
+                  Send Message
+                </button>
               </form>
             </div>
           </div>
