@@ -1,31 +1,38 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $subject = !empty($_POST['subject']) ? $_POST['subject'] : "New Contact Form Submission";
-    $message = $_POST['message'];
+    // reCAPTCHA secret key (from Google)
+    $secretKey = "6LehWnIrAAAAALo0Nu6Ad40t3u1uzDKvSKIBccAm";
+    $captchaResponse = $_POST['g-recaptcha-response'];
 
-    // Receiver email
-    $to = "test@example.com";
+    // Verify captcha with Google
+    $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$captchaResponse");
+    $responseData = json_decode($verifyResponse);
 
-    // Subject line
-    $mail_subject = "Contact Form: " . $subject;
+    if ($responseData->success) {
+        // Captcha passed ✅
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = !empty($_POST['subject']) ? $_POST['subject'] : "New Contact Form Submission";
+        $message = $_POST['message'];
 
-    // Body of the mail
-    $body = "You received a new message from your website contact form:\n\n";
-    $body .= "Name: $name\n";
-    $body .= "Email: $email\n\n";
-    $body .= "Message:\n$message\n";
+        $to = "test@example.com"; // receiver email
+        $mail_subject = "Contact Form: " . $subject;
 
-    // Headers
-    $headers = "From: contact-form@" . $_SERVER['SERVER_NAME'] . "\r\n";
-    $headers .= "Reply-To: $email\r\n";
+        $body = "You received a new message from your website contact form:\n\n";
+        $body .= "Name: $name\n";
+        $body .= "Email: $email\n\n";
+        $body .= "Message:\n$message\n";
 
-    // Send mail
-    if (mail($to, $mail_subject, $body, $headers)) {
-        echo "✅ Message sent successfully!'";
+        $headers = "From: contact-form@" . $_SERVER['SERVER_NAME'] . "\r\n";
+        $headers .= "Reply-To: $email\r\n";
+
+        if (mail($to, $mail_subject, $body, $headers)) {
+            echo "✅ Message sent successfully!";
+        } else {
+            echo "❌ Message could not be sent.";
+        }
     } else {
-        echo "❌ Message could not be sent.'";
+        echo "⚠️ Please verify that you are not a robot.";
     }
 }
 ?>
