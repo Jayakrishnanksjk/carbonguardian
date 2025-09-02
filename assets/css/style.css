@@ -29563,12 +29563,13 @@ edit .quantity-edit button {
   list-style-type: disc;
   font-weight: normal;
   font-style: normal;
+  text-align: justify;
 }
 
 .custom-bullets li {
   margin-bottom: 8px;
   line-height: 1.5;
-  text-align: left;
+  text-align: justify;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
