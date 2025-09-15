@@ -19477,7 +19477,7 @@ p {
 .rts-single-service-solar-energy .icon {
   width: 100px;
   height: 100px;
-  border: 1px solid #E9E9E9;
+  /* border: 1px solid #E9E9E9; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19691,7 +19691,7 @@ p {
   position: relative;
   z-index: 2;
   height: 156px;
-  background-image: none; /* Remove background image */
+  background-image: none; 
   background-repeat: unset;
   background-size: unset;
 }
@@ -19703,7 +19703,7 @@ p {
   right: 10px;
   top: auto;         /* don’t stretch from top */
   width: auto;
-  opacity: 1;
+  opacity: 0.4;
   object-fit: contain;
   z-index: 1;
   pointer-events: none;
@@ -22068,6 +22068,7 @@ p {
 @media only screen and (max-width: 1199px) {
   .rts-single-working-process {
     padding: 25px;
+    min-height: 415px;
   }
 }
 .rts-single-working-process:hover .icon {
