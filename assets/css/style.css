@@ -336,7 +336,7 @@ p {
   line-height: var(--line-height-b2);
   font-weight: var(--p-regular);
   color: var(--color-body);
-  margin: 0 0 40px;
+  margin: 0 0 32px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -398,6 +398,7 @@ p:last-child {
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
+  line-height: 140%;
 }
 
 .b1 {
@@ -488,7 +489,7 @@ ul.liststyle.bullet li + li {
 
 ul li {
   font-size: var(--font-size-b1);
-  line-height: var(--line-height-b1);
+  line-height: 140%;
   margin-top: 10px;
   margin-bottom: 10px;
   color: var(--color-body);
@@ -18567,7 +18568,7 @@ letter-spacing: 0.32px;
   color: #1F1F25;
   margin-top: -12px;
     letter-spacing: 0.96px;
-  line-height: 60px;
+  line-height: 110%;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -18628,7 +18629,7 @@ letter-spacing: 0.32px;
   color: #1F1F25;
   margin-top: -12px;
     letter-spacing: 0.96px;
-  line-height: 60px;
+  line-height: 110%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -19690,7 +19691,7 @@ p {
   display: block;
   position: relative;
   z-index: 2;
-  height: 156px;
+  height: 170px;
   background-image: none; 
   background-repeat: unset;
   background-size: unset;
@@ -19762,12 +19763,13 @@ p {
 
 .single-service-solari .title {
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   font-size: 20px;
   transition: 0.3s;
   color: #1F1F25;
   max-width: -moz-max-content;
   max-width: max-content;
+  line-height: 110%;
 }
 
 .single-service-solari .title:hover {
@@ -19781,6 +19783,7 @@ p {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
+  line-height: 140%;
 }
 
 .rts-service-area-height-solari {
@@ -19905,7 +19908,7 @@ p {
   font-weight: 400;
   font-size: 16px;
    letter-spacing: 0.32px;
-  line-height: 24px;
+  line-height: 140%;
 }
 
 .single-solari-service-start a.read-more-btn {
@@ -20719,7 +20722,7 @@ p {
 }
 
 .portfolio-disc-content {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .portfolio-disc-content .title-area span {
@@ -20740,7 +20743,7 @@ p {
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 140%;
   color: #303030;
   margin-bottom: 25px;
   letter-spacing: 0px;
@@ -22122,7 +22125,7 @@ p {
   font-weight: normal;
   font-style: normal;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 140%;
 }
 
 .rts-single-working-process .content .step_number {
@@ -29564,13 +29567,14 @@ edit .quantity-edit button {
   list-style-type: disc;
   font-weight: normal;
   font-style: normal;
-  text-align: justify;
+  text-align: left;
+  line-height: 1.4;
 }
 
 .custom-bullets li {
   margin-bottom: 8px;
-  line-height: 1.5;
-  text-align: justify;
+  line-height: 1.4;
+  text-align: left;
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -29650,6 +29654,7 @@ edit .quantity-edit button {
   transition: box-shadow 0.3s ease;
   border-radius: 12px !important;
   overflow: hidden;
+  padding: 14px 24px;
 }
 
 .news-card:hover {
@@ -29671,7 +29676,7 @@ edit .quantity-edit button {
   width: 1345px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30px; 
+  margin-bottom: 0px; 
 }
 
 
