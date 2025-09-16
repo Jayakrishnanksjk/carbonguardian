@@ -584,7 +584,7 @@ ol ul {
 @media only screen and (max-width: 575px) {
     h1 {
         font-size: 28px;
-        line-height: 36px;
+        line-height: 110%;
     }
 }
 
@@ -20672,7 +20672,7 @@ nav ul li a {
 .title-area-left .title {
     font-weight: 700;
     font-size: 48px;
-    line-height: 62px;
+    line-height: 110%;
     color: #1F1F25;
     margin-top: -12px;
 }
@@ -20680,28 +20680,28 @@ nav ul li a {
 @media only screen and (max-width: 1199px) {
     .title-area-left .title {
         font-size: 36px;
-        line-height: 50px;
+        line-height: 110%;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .title-area-left .title {
         font-size: 36px !important;
-        line-height: 50px;
+        line-height: 110%;
     }
 }
 
 @media only screen and (max-width: 767px) {
     .title-area-left .title {
         font-size: 32px;
-        line-height: 45px;
+        line-height: 110%;
     }
 }
 
 @media only screen and (max-width: 575px) {
     .title-area-left .title {
         font-size: 24px;
-        line-height: 36px;
+        line-height: 110%;
     }
 }
 
