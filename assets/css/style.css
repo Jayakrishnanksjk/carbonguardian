@@ -336,7 +336,7 @@ p {
   line-height: var(--line-height-b2);
   font-weight: var(--p-regular);
   color: var(--color-body);
-  margin: 0 0 32px;
+  margin: 0 0 28px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -19465,8 +19465,8 @@ p {
 
 .rts-single-service-solar-energy {
     padding: 40px 30px;
-    background: linear-gradient(135deg, #fefefe, #f5f5f5);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    box-shadow: 0px 10px 34px rgb(0 0 0 / 7%);
     border-radius: 20px;
     height: 100%;
     text-align: center;
@@ -19730,6 +19730,29 @@ p {
     height: 100%;
     text-align: center;
     /* border: 1px solid #e0e0e0; */
+}
+
+
+.single-service-solari-measurement-monitoring {
+    padding: 40px 30px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #fefefe, #f5f5f5);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    height: 100%;
+    text-align: center;
+}
+
+/* Add hover effect */
+.single-service-solari-measurement-monitoring:hover {
+    transform: scale(1.05); /* makes it pop forward */
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15); /* slightly deeper shadow */
 }
 
 .single-service-solari::after {
@@ -20749,6 +20772,12 @@ p {
   letter-spacing: 0px;
   text-align: justify;
   padding-right: 30px;
+}
+
+@media  only screen and (max-width: 767px) {
+  .portfolio-disc-content p.disc {
+    padding: 0px 15px;
+  }
 }
 
 .portfolio-disc-content p.quote {
@@ -22056,7 +22085,7 @@ p {
 
 .rts-single-working-process {
     position: relative;
-    min-height: 290px;
+    min-height: 375px;
     padding: 40px 30px;
     text-align: center;
       box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.1);
@@ -23948,6 +23977,7 @@ p {
 
 .footer-bg-two .pages-footer ul li a p:hover {
   color: var(--color-primary);
+  padding-right: 5px;
 }
 
 .single-footer-one-wrapper.two .single-footer-component .body p.disc {
@@ -29676,7 +29706,7 @@ edit .quantity-edit button {
   width: 1345px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 0px; 
+  margin-bottom: 0px;
 }
 
 
@@ -29982,4 +30012,8 @@ textarea {
 }
 
 
-
+@media (max-width: 768px) { /* mobile screens */
+  .full-width-mobile{
+    width: 100% !important; /* override inline width */
+  }
+}
