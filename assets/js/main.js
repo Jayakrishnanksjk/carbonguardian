@@ -514,7 +514,7 @@
           effect: 'slide',
           loop: true,
           autoplay: {
-            delay: 5000,
+            delay: 7000,
           },
         });
       });

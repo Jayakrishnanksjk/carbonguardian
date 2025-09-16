@@ -14042,7 +14042,7 @@ letter-spacing: 0.32px;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.4px;
-  line-height: 28px;
+  line-height: 140%;
 }
 
 .header-two-solari.header-top {
