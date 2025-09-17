@@ -12893,6 +12893,7 @@ nav ul li a {
 .main-nav-one ul li.has-dropdown .submenu li a {
   padding: 12px 35px 12px 12px;
   border-bottom: 1px solid #ebebeb;
+  font-weight: 200;
 }
 .main-nav-one ul li.has-dropdown .submenu li a::before {
   display: none;

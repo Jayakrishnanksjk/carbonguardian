@@ -11968,8 +11968,9 @@ header.header-three.sticky .logo-area .logo-dark {
 }
 
 header.header-three.sticky .main-nav-one ul li a.nav-link {
-  color: #1f1f25;
+  color: #3b3b3b;
   font-size: 15px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 header.header-three.header--sticky.sticky .header-right .action-button-menu #menu-btn svg rect {
@@ -13305,7 +13306,7 @@ nav ul li a {
 }
 
 .main-nav-one ul li a.nav-link {
-  color: #1F1F25;
+  color: #3b3b3b;
 }
 
 
@@ -13418,6 +13419,7 @@ nav ul li a {
 .main-nav-one ul li.has-dropdown .submenu li {
   margin-right: 0;
   padding: 0 15px;
+  font-weight: 200 ! important;
 }
 
 .main-nav-one ul li.has-dropdown .submenu li:last-child a {
@@ -13425,8 +13427,11 @@ nav ul li a {
 }
 
 .main-nav-one ul li.has-dropdown .submenu li a {
-  padding: 12px 35px 12px 12px;
-  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0px ;
+  /* border-bottom: 1px solid #ebebeb; */
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 0%;
 }
 
 .main-nav-one ul li.has-dropdown .submenu li a::before {
@@ -13446,6 +13451,7 @@ nav ul li a {
 
 .main-nav-one ul li:hover a.nav-link {
   color: var(--color-primary);
+  font-weight: bold !important; 
 }
 
 .mobile-menu-main nav ul li.has-droupdown ul.mm-collapse li {
@@ -19695,6 +19701,20 @@ p {
   background-image: none; 
   background-repeat: unset;
   background-size: unset;
+}
+
+@media (min-width: 984px) and (max-width: 1203px) {
+  /* Mid screens (tablet) */
+  .single-service-solari {
+    height: 240px;
+  }
+}
+
+@media (max-width: 983px) {
+  /* Small screens (mobile) */
+  .single-service-solari {
+    height: 150px;
+  }
 }
 
 
@@ -26813,7 +26833,7 @@ form.appoinment-form .input-half-wrapper .single-input input {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 160px;
+  padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
 }
