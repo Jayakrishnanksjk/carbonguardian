@@ -331,7 +331,7 @@
                       />
                     </svg>
                   </div>
-                  <div class="menu-btn" id="menu-btn">
+                  <div class="menu-btn desk-hider" id="menu-btn">
                     <svg
                       width="20"
                       height="16"
@@ -574,9 +574,9 @@
           <div class="rts-single-service-solar-energy">
             <div class="icon">
               <img
-                src="assets/images/icons/vendor-logo.png"
+                src="assets/images/icons/vendor-logo.svg"
                 alt=""
-                style="width: 75%"
+                style="width: 65%"
               />
             </div>
             <h6 class="title">Vendor Agnostic</h6>
@@ -595,9 +595,9 @@
           <div class="rts-single-service-solar-energy">
             <div class="icon">
               <img
-                src="assets/images/icons/flexible-logo.png"
+                src="assets/images/icons/flexible-logo.svg"
                 alt=""
-                style="width: 75%"
+                style="width: 65%"
               />
             </div>
             <h6 class="title">FLEXIBLE AND CUSTOMIZABLE</h6>
@@ -615,9 +615,9 @@
           <div class="rts-single-service-solar-energy">
             <div class="icon">
               <img
-                src="assets/images/icons/cost effective-logo.png"
+                src="assets/images/icons/cost effective-logo.svg"
                 alt=""
-                style="width: 75%"
+                style="width: 60%"
               />
             </div>
             <h6 class="title">COST EFFECTIVE</h6>
@@ -1284,6 +1284,9 @@
     <script src="assets/js/plugins/jquery-timepicker.js"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="assets/js/vendor/magnific-popup.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script>
   function openFullScreen(btn) {
     var imgSrc = btn.closest('.image-overlay-container').querySelector('img').src;

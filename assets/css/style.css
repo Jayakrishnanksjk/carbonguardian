@@ -12718,7 +12718,9 @@ header.header-four .header-right .action-button-menu #menu-btn {
 
 .mobile-menu-main nav ul li.has-droupdown ul li {
   margin: 0px 0 !important;
-  border-bottom: 1px solid #f3f3f3;
+  /* border-bottom: 1px solid #f3f3f3; */
+  font-size: 14px;
+  font-weight: 200px;
 }
 
 .mobile-menu-main nav ul li.has-droupdown::after {
@@ -13307,6 +13309,8 @@ nav ul li a {
 
 .main-nav-one ul li a.nav-link {
   color: #3b3b3b;
+  display: inline-block; /* Needed for transform to work properly */
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 
@@ -13429,7 +13433,7 @@ nav ul li a {
 .main-nav-one ul li.has-dropdown .submenu li a {
   padding: 20px 0px ;
   /* border-bottom: 1px solid #ebebeb; */
-  font-weight: 200;
+  font-weight: 400;
   font-size: 16px;
   line-height: 0%;
 }
@@ -14009,6 +14013,7 @@ nav ul li a {
   font-size: 15px;
 letter-spacing: 0.32px;
   line-height: 24px;
+  padding-left: 10px;
 }
 
 .banner-solari-2-content span.pre {
@@ -19470,7 +19475,7 @@ p {
 } */
 
 .rts-single-service-solar-energy {
-    padding: 40px 30px;
+    padding: 30px;
     background: #fff;
     box-shadow: 0px 10px 34px rgb(0 0 0 / 7%);
     border-radius: 20px;
@@ -19480,10 +19485,17 @@ p {
     /* border: 1px solid #e0e0e0; */
 }
 
+@media screen and (max-width: 991px) {
+  
+  .rts-single-service-solar-energy {
+    padding: 20px;
+  }
+}
+
 
 .rts-single-service-solar-energy .icon {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   /* border: 1px solid #E9E9E9; */
   display: flex;
   align-items: center;
@@ -19736,7 +19748,7 @@ p {
 
 
 .single-service-solari-measurement {
-    padding: 40px 30px;
+    padding:  30px;
     border-radius: 20px;
     background: linear-gradient(135deg, #fefefe, #f5f5f5);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -19752,9 +19764,14 @@ p {
     /* border: 1px solid #e0e0e0; */
 }
 
+@media screen and (max-width: 575px) {
+  .single-service-solari-measurement {
+    padding: 20px;
+  } 
+}
 
 .single-service-solari-measurement-monitoring {
-    padding: 40px 30px;
+    padding: 30px;
     border-radius: 20px;
     background: linear-gradient(135deg, #fefefe, #f5f5f5);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
@@ -19768,6 +19785,11 @@ p {
     height: 100%;
     text-align: center;
 }
+
+@media screen and (max-width: 575px) {
+  .single-service-solari-measurement-monitoring {
+    padding: 20px;
+  } }
 
 /* Add hover effect */
 .single-service-solari-measurement-monitoring:hover {
@@ -19929,7 +19951,10 @@ p {
 
 @media only screen and (max-width: 479px) {
   .single-solari-service-start .icon-area {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+  }
+  .single-solari-service-start a.read-more-btn{
+    margin-top: 40px;
   }
 }
 .single-solari-service-start .title {
@@ -30092,4 +30117,18 @@ textarea {
   max-width: 90%;
   max-height: 90%;
   box-shadow: 0 0 20px #000;
+}
+
+
+.banner-pl {
+padding-left: 35px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .banner-pl {
+    padding-left: 0px !important;
+  } 
+  .banner-two-swiper-start .swiper-slide.swiper-slide-active .banner-two-main-wrapper-solaric .banner-solari-2-content span.pre {
+  padding-left: 0px;
+}
 }

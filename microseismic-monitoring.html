@@ -614,7 +614,7 @@
 
     <!-- rts project details area start -->
 
-    <div class="rts-faq-area rts-section-gap" style="padding-bottom: 0px">
+    <div class="rts-faq-area" style="padding-bottom: 0px">
       <div class="container" style="margin-top: 60px">
         <!-- First Section -->
         <div class="row">
@@ -1169,6 +1169,9 @@
     <script src="assets/js/plugins/jquery-timepicker.js"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="assets/js/vendor/magnific-popup.min.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 
     <script>
   function openFullScreen(button) {
