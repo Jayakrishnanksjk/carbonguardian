@@ -199,12 +199,12 @@
                       <li class="has-dropdown">
                         <a class="nav-link" href="#">Company</a>
                         <ul class="submenu">
-                          <li><a href="index.html#about">About</a></li>
-                          <li>
+                          <!-- <li><a href="index.html#about">About</a></li> -->
+                          <!-- <li>
                             <a href="index.html#value-proposition"
                               >Value Proposition</a
                             >
-                          </li>
+                          </li> -->
                           <li><a href="team.html">Leadership Team</a></li>
                           <li>
                             <a
@@ -556,13 +556,25 @@
 
           <!-- Right Side: Image -->
           <div class="col-lg-6 d-flex align-items-start">
-            <div class="thumbnail text-start">
+            <!-- <div class="thumbnail text-start">
               <img
                 src="assets/images/banner/technical-adv.jpeg"
                 alt="project-details"
                 class="img-fluid"
                 style="display: block"
               />
+            </div> -->
+            <div class="image-overlay-container">
+              <img
+                src="assets/images/banner/technical-adv.jpeg"
+                alt="project-details"
+                class="img-fluid"
+              />
+              <div class="overlay">
+                <button class="view-btn" onclick="openFullScreen(this)">
+                  View Image
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -864,6 +876,7 @@
                           "
                         >
                           Houston (USA)
+                           </h6>
                         <h6
                           class="title"
                           style="
@@ -890,8 +903,8 @@
             <!-- copyright area start -->
             <div class="copyright-area-two">
               <div class="left">
-                <p>Copyright 2025. All Rights Reserved.</p>
-              </div>
+  <p>Copyright <span id="year"></span>. All Rights Reserved.</p>
+</div>
               <!-- <div class="right">
                         <ul>
                             <li><a href="#">Terms & conditions</a></li>
@@ -977,6 +990,32 @@
     <script src="assets/js/plugins/jquery-timepicker.js"></script>
     <script src="assets/js/plugins/bootstrap.min.js"></script>
     <script src="assets/js/vendor/magnific-popup.min.js"></script>
+    <script>
+  function openFullScreen(button) {
+    // ✅ Get the image inside the same container
+    const img = button.closest('.image-overlay-container').querySelector('img');
+
+    // ✅ Create modal only if it doesn't exist yet
+    let modal = document.getElementById('fullscreenModal');
+    if (!modal) {
+      modal = document.createElement('div');
+      modal.id = 'fullscreenModal';
+      modal.className = 'fullscreen-modal';
+      modal.innerHTML = '<img id="fullscreenImg" src="" alt="Full Screen">';
+      modal.addEventListener('click', () => modal.style.display = 'none');
+      document.body.appendChild(modal);
+
+      // ✅ ESC key closes modal
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') modal.style.display = 'none';
+      });
+    }
+
+    // ✅ Show modal with clicked image
+    document.getElementById('fullscreenImg').src = img.src;
+    modal.style.display = 'flex';
+  }
+</script>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>

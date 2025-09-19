@@ -19916,7 +19916,7 @@ p {
 }
 
 .single-solari-service-start .icon-area {
-  margin-bottom: 90px;
+  margin: 0 auto 40px;
   height: 80px;
   width: 80px;
   background: #fff;
@@ -19924,7 +19924,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-primary);
+  /* border: 1px solid var(--color-primary); */
 }
 
 @media only screen and (max-width: 479px) {
@@ -19940,6 +19940,7 @@ p {
   color: #1F1F25;
   letter-spacing: 0.48px;
   line-height: 32px;
+  text-align: center;
 }
 
 .single-solari-service-start .title:hover {
@@ -19952,6 +19953,7 @@ p {
   font-size: 16px;
    letter-spacing: 0.32px;
   line-height: 140%;
+  text-align: center;
 }
 
 .single-solari-service-start a.read-more-btn {
@@ -26878,7 +26880,7 @@ form.appoinment-form .input-half-wrapper .single-input input {
 }
 .form--area {
   background: #F7F7F7;
-  padding: 80px;
+  padding: 40px;
   border-radius: 5px;
 }
 
@@ -30036,4 +30038,58 @@ textarea {
   .full-width-mobile{
     width: 100% !important; /* override inline width */
   }
+}
+
+
+.image-overlay-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-overlay-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image-overlay-container:hover .overlay {
+  opacity: 1;
+}
+
+.view-btn {
+  padding: 10px 20px;
+  background-color: #01953F;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 25%;
+}
+
+.fullscreen-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.fullscreen-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 20px #000;
 }
