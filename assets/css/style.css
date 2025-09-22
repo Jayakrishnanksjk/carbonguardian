@@ -13311,6 +13311,7 @@ nav ul li a {
   color: #3b3b3b;
   display: inline-block; /* Needed for transform to work properly */
   transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 400;
 }
 
 
@@ -13386,6 +13387,7 @@ nav ul li a {
 .main-nav-one ul li.has-dropdown a.nav-link {
   padding: 28px 15px !important;
   color: #1F1F25;
+  font-weight: 400;
 }
 
 .main-nav-one ul li.has-dropdown a::before {
