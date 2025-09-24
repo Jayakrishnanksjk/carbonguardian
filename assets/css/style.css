@@ -1519,6 +1519,17 @@ ol ul {
   padding-bottom: 90px !important;
 }
 
+/* Tablet only: 768px – 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .pt--90 {
+    padding-top: 60px !important;
+  }
+  .pb--55 {
+    padding-bottom: 10px !important;
+  }
+}
+
+
 .pl--90 {
   padding-left: 90px !important;
 }
@@ -23780,7 +23791,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .single-footer-one-wrapper {
-    gap: 55px;
+    gap: 62px;
     flex-wrap: nowrap !important;
   }
 }
@@ -23883,6 +23894,7 @@ p {
 .rts-social-style-one ul li a i {
   color: #fff;
   transition: 0.3s;
+font-size: 25px;
 }
 
 .rts-social-style-one ul li a:hover {
@@ -29941,11 +29953,12 @@ textarea {
     }
   }
 
-  @media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1025px) {
   .desk-hider {
     display: none !important;
   }
 }
+
 
 
 
