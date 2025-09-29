@@ -11845,7 +11845,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
 }
 @media only screen and (max-width: 767px) {
   .main-haeder-wrapper-h2 a.logo-area img {
-    max-width: 75px;
+    max-width: 100px;
   }
 }
 .main-haeder-wrapper-h2 .actions-area {
@@ -23791,7 +23791,7 @@ p {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .single-footer-one-wrapper {
-    gap: 62px;
+    gap: 50px;
     flex-wrap: nowrap !important;
   }
 }
@@ -24000,6 +24000,8 @@ font-size: 25px;
 }
 .rts-footer-one.footer-bg-two .copyright-area-two .left p {
   margin: 0;
+
+  font-size: 14px;
 }
 
 .rts-footer-one.footer-bg-two .copyright-area-two .right ul {
