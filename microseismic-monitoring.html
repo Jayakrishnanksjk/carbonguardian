@@ -10,7 +10,7 @@
       type="image/x-icon"
       href="assets/images/fav.png"
     />
-    <title>Project Details</title>
+    <title>Carbon Guardian</title>
 
     <!-- fontawesome css -->
     <link rel="stylesheet" href="assets/css/plugins/fontawesome-6.css" />
@@ -580,24 +580,46 @@
           </div>
 
           <!-- Right Side: Image -->
-          <div class="col-lg-6">
-            <div class="thumbnail text-center">
-              <!-- <img
-                        src="assets/images/banner/ServiceCard_MS.png"
-                        alt="project-details"
-                        class="img-fluid"
-                      /> -->
-              <video
-                id="intro-video"
-                width="100%"
-                controls
-                style="display: block"
-              >
-                <source src="assets/images/banner/C44.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
+        <div class="col-lg-6">
+  <div class="thumbnail text-center" style="position: relative;">
+    <!-- Video wrapper with fixed aspect ratio -->
+    <div class="video-container" style="
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+      background: #000;
+    ">
+      <video
+        id="intro-video"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        "
+        controls
+        poster="assets/images/banner/video-poster.jpg"
+      >
+        <source src="assets/images/banner/C44.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Custom Play Button Overlay -->
+      <div class="video-icon" style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+        z-index: 2;
+      ">
+        <div class="play-button"></div>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
       </div>
 
@@ -1206,7 +1228,49 @@
           document.body.appendChild(script);
         });
     </script>
+<style>
+  .play-button {
+    width: 60px;
+    height: 60px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 50%;
+    position: relative;
+  }
 
+  .play-button::before {
+    content: '';
+    position: absolute;
+    left: 22px;
+    top: 15px;
+    border-style: solid;
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent white;
+  }
+
+  .video-icon:hover .play-button {
+    background: rgba(0,0,0,0.8);
+  }
+</style>
+
+<script>
+  const video = document.getElementById('intro-video');
+  const playButton = document.querySelector('.video-icon');
+
+  playButton.addEventListener('click', () => {
+    if (video.paused) {
+      video.play();
+      playButton.style.display = 'none'; // Hide the overlay
+    } else {
+      video.pause();
+      playButton.style.display = 'block';
+    }
+  });
+
+  // Optional: show overlay when video is paused
+  video.addEventListener('pause', () => {
+    playButton.style.display = 'block';
+  });
+</script>
     <script src="assets/js/main.js"></script>
     <!-- Scripts style two End -->
   </body>
