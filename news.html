@@ -293,7 +293,6 @@
                             <li><a href="news-details.html">Blog Details</a></li>
                           </ul>
                         </li> -->
-
                       <li>
                         <a
                           class="nav-link"
@@ -949,7 +948,7 @@
               </div>
               <div class="single-footer-component last">
                 <div class="title-area" style="margin-bottom: 54px">
-                  <h5 class="title">Contact Us</h5>
+                  <h5 class="title">Locations</h5>
                 </div>
                 <div class="body">
                   <!-- footer contact area start -->
@@ -1202,15 +1201,19 @@
         //       <img src="${item.image}" alt="blog-image" class="img-fluid rounded" style="width: 269px; height: 182px; object-fit: contain;">
         //     </div>
         col.innerHTML = `
-    <div class="news-card d-flex rounded shadow-sm bg-white align-items-start" style="border-radius: 12px;">
-      
-      <div class="news-content">
-        <p class="text-muted mb-1 small">${item.date}</p>
-        <h5 class="fw-bold" style="color: black; margin-bottom: 8px;">${item.title}</h5>
-        ${descriptionHTML}
-      </div>
+  <div class="news-card d-flex rounded shadow-sm bg-white align-items-start" style="border-radius: 12px;">
+    <div class="news-content">
+      <p class="text-muted mb-1 small">${item.date}</p>
+      <h5 class="fw-bold" style="color: black; margin-bottom: 8px;">${item.title}</h5>
+      ${descriptionHTML}
+      ${item.partnerLink ? `
+        <a href="${item.partnerLink}" target="_blank" class="btn btn-sm btn-primary mt-3" style="border-radius: 20px; padding: 6px 16px;">
+          Visit Site
+        </a>` : ''}
     </div>
-  `;
+  </div>
+`;
+
 
         return col;
       }

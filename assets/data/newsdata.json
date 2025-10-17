@@ -38,7 +38,8 @@
     "tags": "Monitoring, CCS",
     "title": "Strategic Partnership with Atgeir Solutions",
     "description": "To quickly develop essential digital solutions for carbon capture and sequestration, expertise and experience from different industries needs to be combined. Thus, we are proud to announce the strategic partnership between Atgeir Solutions and Carbon Guardian which combines the deep expertise in data analytics, cloud computing and AI capabilities of Atgeir Solutions with the experience in subsurface monitoring of Carbon Guardian. This partnership, in addition to the collaboration with Microsoft, will allow the fast development of a cloud-native SaaS solution for the monitoring of CO2 storage. Carbon Guardian is looking forward to a successful, long-term alliance with Atgeir Solutions.",
-    "link": "news-details.html?id=4"
+    "link": "news-details.html?id=4",
+    "partnerLink": "https://www.atgeirsolutions.com/"
   },
 
   {
@@ -49,7 +50,8 @@
     "tags": "Clean, Service",
     "title": "4D Seismic Interpretation using AI",
     "link": "news-details.html?id=5",
-    "description": "<p>Fast and cost-efficient interpretation of time-lapse 3D seismic data is essential for tracking the CO2 plume in underground storage. As part of our portfolio of services and technologies for CO2 storage monitoring, we bring proven and AI-based seismic interpretation technology and software from Seisnetics to your storage project.</p><p>The technology developed by Seisnetics allows for automated tracking of horizons and faults from 3D seismic data using AI-driven waveform recognition. It efficiently screens a large number of potential storage sites and dramatically speeds up structural characterization. Potential leakage paths in the cap rock can be identified from the faults interpreted by the AI algorithm. Multivolume analysis and comparison identify changes in the CO2 position over time, forming the basis for tracking the CO2 cloud underground. Choose Carbon Guardian and Seisnetics technology to revolutionize your 4D seismic monitoring and always have the latest image of CO2 in your underground storage.</p>"
+    "description": "<p>Fast and cost-efficient interpretation of time-lapse 3D seismic data is essential for tracking the CO2 plume in underground storage. As part of our portfolio of services and technologies for CO2 storage monitoring, we bring proven and AI-based seismic interpretation technology and software from Seisnetics to your storage project.</p><p>The technology developed by Seisnetics allows for automated tracking of horizons and faults from 3D seismic data using AI-driven waveform recognition. It efficiently screens a large number of potential storage sites and dramatically speeds up structural characterization. Potential leakage paths in the cap rock can be identified from the faults interpreted by the AI algorithm. Multivolume analysis and comparison identify changes in the CO2 position over time, forming the basis for tracking the CO2 cloud underground. Choose Carbon Guardian and Seisnetics technology to revolutionize your 4D seismic monitoring and always have the latest image of CO2 in your underground storage.</p>",
+    "partnerLink": "https://seisnetics.com/"
   },
   {
     "id": 6,

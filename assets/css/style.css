@@ -29781,6 +29781,23 @@ edit .quantity-edit button {
 }
 
 
+.news-content a.btn {
+  background-color: #01953F;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+.news-content a.btn:hover {
+  background-color: black;
+}
+
+
 
 /* Modal Overlay */
 .modal-overlay {
