@@ -196,7 +196,11 @@
                         </li> -->
 
                       <li>
-                        <a class="nav-link" href="#contact" style="width: 60px; max-width: 60px;">Contact</a>
+                        <a
+                          class="nav-link"
+                          href="javascript:void(0);" onclick="openContactModal()"
+                          style="width: 60px; max-width: 60px;">Contact</a
+                        >
                       </li>
                     </ul>
                   </nav>
@@ -2818,6 +2822,20 @@
           video.style.display = "block"; // Show video
           playButton.style.display = "none"; // Hide play button
           video.play(); // Play video
+        });
+    </script>
+
+    <script>
+      fetch("contact-popup.html")
+        .then((res) => res.text())
+        .then((html) => {
+          // Inject popup HTML into the body
+          document.body.insertAdjacentHTML("beforeend", html);
+
+          // Load the JS after the HTML is in the DOM
+          const script = document.createElement("script");
+          script.src = "contact-popup.js";
+          document.body.appendChild(script);
         });
     </script>
 
