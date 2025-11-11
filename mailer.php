@@ -17,7 +17,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "support@reactheme.com";
+        $recipient = "jayakrishnanashi@gmail.com";
 
         // Set the email subject.
         $subject = "Solari Contact Form $name";

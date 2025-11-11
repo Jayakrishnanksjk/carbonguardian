@@ -2827,19 +2827,53 @@
         });
     </script>
 
-    <script>
+
+  
+
+    <!-- <script>
       fetch("contact-popup.html")
         .then((res) => res.text())
         .then((html) => {
-          // Inject popup HTML into the body
+          
           document.body.insertAdjacentHTML("beforeend", html);
 
-          // Load the JS after the HTML is in the DOM
+       
           const script = document.createElement("script");
-          script.src = "contact-popup.js";
+          script.src = "./contact-popup.js";
           document.body.appendChild(script);
         });
-    </script>
+    </script> -->
+
+ <script>
+  fetch("contact-popup.html")
+    .then((res) => {
+
+      if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
+      return res.text();
+    })
+    .then((html) => {
+  
+      // Inject the popup HTML into the body
+      document.body.insertAdjacentHTML("beforeend", html);
+
+      // Now load the popup JS only AFTER the HTML is added
+      const script = document.createElement("script");
+      script.src = "contact-popup.js";
+
+      // ✅ Wait until script is fully loaded before using it
+      script.onload = () => {
+        console.log("Popup JS loaded successfully!");
+      };
+
+      document.body.appendChild(script);
+    })
+    .catch((err) => {
+      console.error("❌ Error loading contact popup:", err);
+    });
+</script>
+
+
+
 
     <script src="assets/js/main.js"></script>
     <!-- header style two End -->

@@ -40,3 +40,12 @@ function handleSubmit(event) {
 
   return false;
 }
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("contactPopup");
+  if (popup) {
+    popup.style.display = "block";
+  }
+});
+
