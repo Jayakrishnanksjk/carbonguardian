@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // reCAPTCHA secret key (from Google)
-    $secretKey = "6LehWnIrAAAAALo0Nu6Ad40t3u1uzDKvSKIBccAm";
+    $secretKey = "6Leh5wksAAAAAL77Baw6xoGlV7MpqOEt4wyXb8jS"; // 🔄 NEW secret key
     $captchaResponse = $_POST['g-recaptcha-response'];
 
     // Verify captcha with Google
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $subject = !empty($_POST['subject']) ? $_POST['subject'] : "New Contact Form Submission";
         $message = $_POST['message'];
 
-        $to = "jayakrishnanashi@gmail.com"; // receiver email
+        $to = "info@carbonguardian.com"; // receiver email
         $mail_subject = "Contact Form: " . $subject;
 
         $body = "You received a new message from your website contact form:\n\n";
