@@ -1,8 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // reCAPTCHA secret key (from Google)
-    $secretKey = "6Ldk_BcsAAAAAPGmxL7TTb2_yZNZS9MK9BPCz6qV"; // 🔄 secret key
-
+    $secretKey = "6Leh5wksAAAAAL77Baw6xoGlV7MpqOEt4wyXb8jS"; // 🔄 secret key
     $captchaResponse = $_POST['g-recaptcha-response'];
 
     // Verify captcha with Google
